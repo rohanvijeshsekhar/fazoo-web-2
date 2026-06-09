@@ -7,7 +7,7 @@
     "start": "node server.js",
     "dev": "node --watch server.js",
     "seed": "node db/seed.js",
-    "build": "echo \"No build required\""
+    "build": "cd ../faz00 && npm install && npm run build && node -e \"const fs=require('fs');const path=require('path');const src=path.resolve('../faz00/dist');const dest=path.resolve('./public');fs.rmSync(dest,{recursive:true,force:true});fs.cpSync(src,dest,{recursive:true});console.log('Frontend copied to backend/public');\""
   },
   "dependencies": {
     "express": "^4.21.0",

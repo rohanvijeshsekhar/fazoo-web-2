@@ -7,6 +7,7 @@ yarn-error.log*
 # ── Frontend build output ─────────────
 faz00/dist/
 faz00/.vite/
+backend-node/public/
 
 # ── Environment / secrets ─────────────
 .env

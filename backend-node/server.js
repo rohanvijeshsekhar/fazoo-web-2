@@ -28,6 +28,9 @@ app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 // Serve uploaded media files statically at /media/
 app.use('/media', express.static(path.join(__dirname, 'media')));
 
+// Serve React frontend build
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Parse auth token on every request
 app.use(parseToken);
 
@@ -70,6 +73,12 @@ app.use('/api/*', (req, res) => {
 app.use((err, req, res, next) => {
   console.error('Server error:', err);
   res.status(500).json({ detail: 'Internal server error.' });
+});
+
+// ─── SPA Fallback ─── (must be LAST — after all API routes)
+// Serves index.html for any non-API route so React Router deep links work.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // ─── Start Server ───

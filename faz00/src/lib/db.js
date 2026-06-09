@@ -1,6 +1,6 @@
 // Dynamic REST API Client connecting React and Node.js Express backend
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 // Helper to convert base64 image/PDF to Blob for file upload
 export const base64ToBlob = (base64) => {
@@ -26,7 +26,7 @@ export const getImageUrl = (url) => {
   if (!url) return '';
   if (url.startsWith('http://') || url.startsWith('https://') || url.startsWith('data:')) return url;
   
-  const mediaBase = import.meta.env.VITE_MEDIA_URL || 'http://localhost:8000';
+  const mediaBase = import.meta.env.VITE_MEDIA_URL || '';
   const cleanMediaBase = mediaBase.endsWith('/') ? mediaBase.slice(0, -1) : mediaBase;
   
   if (url.startsWith('/media/')) return `${cleanMediaBase}${url}`;
