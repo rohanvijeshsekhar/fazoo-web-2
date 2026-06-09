@@ -1,0 +1,29 @@
+# ── Node ──────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Frontend build output ─────────────
+faz00/dist/
+faz00/.vite/
+
+# ── Environment / secrets ─────────────
+.env
+.env.*
+!.env.example
+
+# ── Database files ────────────────────
+backend-node/data.db
+backend-node/data.db-shm
+backend-node/data.db-wal
+backend-node/data.db.backup-*
+
+# ── Uploaded media (runtime data) ─────
+backend-node/media/
+
+# ── OS / Editor ───────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

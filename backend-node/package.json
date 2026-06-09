@@ -1,0 +1,20 @@
+{
+  "name": "fazo-backend",
+  "version": "1.0.0",
+  "description": "FAZO Dental Technology - Node.js Backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node db/seed.js",
+    "build": "echo \"No build required\""
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "better-sqlite3": "^11.0.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "dotenv": "^16.4.0"
+  }
+}
