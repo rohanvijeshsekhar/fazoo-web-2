@@ -3,10 +3,12 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const { initializeSchema } = require('./db/schema');
+const { autoSeed } = require('./db/auto-seed');
 const { parseToken } = require('./middleware/auth');
 
-// Initialize database schema on startup
+// Initialize database schema and auto-seed on first deployment
 initializeSchema();
+autoSeed();
 
 const app = express();
 const PORT = process.env.PORT || 8000;

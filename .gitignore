@@ -8,6 +8,13 @@ yarn-error.log*
 backend-node/frontend/dist/
 backend-node/frontend/.vite/
 backend-node/public/
+faz00/dist/
+faz00/.vite/
+
+# ── ZIP archives ──────────────────────
+*.zip
+*.tar.gz
+*.rar
 
 # ── Environment / secrets ─────────────
 .env
