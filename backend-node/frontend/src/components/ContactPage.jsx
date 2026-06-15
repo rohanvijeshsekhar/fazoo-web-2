@@ -132,9 +132,9 @@ export const ContactPage = () => {
 
   // Determine input classes based on touched and error states
   const getInputClass = (name) => {
-    const baseClass = "w-full px-4 py-3 rounded-xl border bg-white focus:outline-none transition-all duration-300 text-xs font-semibold text-fazo-navy";
+    const baseClass = "w-full px-4 py-3 rounded-xl border bg-white focus:outline-none transition-all duration-300 text-xs font-semibold text-faazo-navy";
     if (!touched[name]) {
-      return `${baseClass} border-fazo-border focus:border-[#0A7C86] focus:ring-1 focus:ring-[#0A7C86]`;
+      return `${baseClass} border-faazo-border focus:border-[#0A7C86] focus:ring-1 focus:ring-[#0A7C86]`;
     }
     if (errors[name]) {
       return `${baseClass} border-red-300 bg-red-50/20 focus:border-red-500 focus:ring-1 focus:ring-red-500`;
@@ -145,8 +145,8 @@ export const ContactPage = () => {
   return (
     <div className="w-full flex-grow relative overflow-hidden pt-6 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-tr from-[#E6F3F5] via-[#F4F9FA] to-[#EAF2F4] text-left">
       {/* Background Floating Blobs */}
-      <div className="absolute top-[5%] right-[-10%] w-[350px] sm:w-[450px] h-[350px] sm:h-[450px] rounded-full bg-fazo-cyan/20 blur-[100px] sm:blur-[130px] animate-float-slow pointer-events-none z-0"></div>
-      <div className="absolute top-[40%] left-[-10%] w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-fazo-teal/15 blur-[110px] sm:blur-[140px] animate-float-medium pointer-events-none z-0"></div>
+      <div className="absolute top-[5%] right-[-10%] w-[350px] sm:w-[450px] h-[350px] sm:h-[450px] rounded-full bg-faazo-cyan/20 blur-[100px] sm:blur-[130px] animate-float-slow pointer-events-none z-0"></div>
+      <div className="absolute top-[40%] left-[-10%] w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-faazo-teal/15 blur-[110px] sm:blur-[140px] animate-float-medium pointer-events-none z-0"></div>
       
       <div className="max-w-[1400px] mx-auto relative z-10 flex flex-col gap-12 pt-2">
         
@@ -165,7 +165,7 @@ export const ContactPage = () => {
                 alt="Modern bright dental clinic environment" 
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-fazo-navy/30 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-faazo-navy/30 via-transparent to-transparent pointer-events-none" />
             </div>
 
             {/* Typography Content */}
@@ -174,10 +174,10 @@ export const ContactPage = () => {
                 <span className="font-sans font-extrabold text-[9px] tracking-[0.25em] text-[#0A7C86] bg-[#0A7C86]/5 border border-[#0A7C86]/10 px-3 py-1 rounded-full uppercase mb-4 inline-block shadow-sm">
                   GET IN TOUCH
                 </span>
-                <h1 className="font-jakarta font-extrabold text-2xl sm:text-3xl leading-[1.2] text-fazo-navy mb-4 tracking-tight">
+                <h1 className="font-jakarta font-extrabold text-2xl sm:text-3xl leading-[1.2] text-faazo-navy mb-4 tracking-tight">
                   Let's Build Better Dental Experiences Together
                 </h1>
-                <p className="font-sans text-xs sm:text-sm text-fazo-gray leading-relaxed mb-6">
+                <p className="font-sans text-xs sm:text-sm text-faazo-gray leading-relaxed mb-6">
                   Whether you're exploring our products, planning a new clinic, looking for dealership opportunities, or seeking technical support, our team is here to help.
                 </p>
               </div>
@@ -188,28 +188,28 @@ export const ContactPage = () => {
                   <div className="w-8 h-8 rounded-lg bg-[#0A7C86]/5 border border-[#0A7C86]/10 flex items-center justify-center text-[#0A7C86]">
                     <MapPin className="w-4 h-4" />
                   </div>
-                  <span className="font-sans text-[11px] font-bold text-fazo-navy leading-tight">Thiruvananthapuram,<br /><span className="text-fazo-gray font-medium">Kerala, India</span></span>
+                  <span className="font-sans text-[11px] font-bold text-faazo-navy leading-tight">Thiruvananthapuram,<br /><span className="text-faazo-gray font-medium">Kerala, India</span></span>
                 </div>
 
                 <div className="flex items-center gap-2.5">
                   <div className="w-8 h-8 rounded-lg bg-[#0A7C86]/5 border border-[#0A7C86]/10 flex items-center justify-center text-[#0A7C86]">
                     <Phone className="w-4 h-4" />
                   </div>
-                  <span className="font-sans text-[11px] font-bold text-fazo-navy leading-tight">Call Direct<br /><span className="text-fazo-gray font-medium">+91 88489 22846</span></span>
+                  <span className="font-sans text-[11px] font-bold text-faazo-navy leading-tight">Call Direct<br /><span className="text-faazo-gray font-medium">+91 88489 22846</span></span>
                 </div>
 
                 <div className="flex items-center gap-2.5">
                   <div className="w-8 h-8 rounded-lg bg-[#0A7C86]/5 border border-[#0A7C86]/10 flex items-center justify-center text-[#0A7C86]">
                     <Mail className="w-4 h-4" />
                   </div>
-                  <span className="font-sans text-[11px] font-bold text-fazo-navy leading-tight">Email Inbox<br /><a href="mailto:info@fazo.in" className="text-[#0A7C86] font-semibold hover:underline">info@fazo.in</a></span>
+                  <span className="font-sans text-[11px] font-bold text-faazo-navy leading-tight">Email Inbox<br /><a href="mailto:info@faazo.in" className="text-[#0A7C86] font-semibold hover:underline">info@faazo.in</a></span>
                 </div>
 
                 <div className="flex items-center gap-2.5">
                   <div className="w-8 h-8 rounded-lg bg-[#0A7C86]/5 border border-[#0A7C86]/10 flex items-center justify-center text-[#0A7C86]">
                     <Globe className="w-4 h-4" />
                   </div>
-                  <span className="font-sans text-[11px] font-bold text-fazo-navy leading-tight">Global Enquiries<br /><span className="text-fazo-gray font-medium">Exports Available</span></span>
+                  <span className="font-sans text-[11px] font-bold text-faazo-navy leading-tight">Global Enquiries<br /><span className="text-faazo-gray font-medium">Exports Available</span></span>
                 </div>
               </div>
             </div>
@@ -226,10 +226,10 @@ export const ContactPage = () => {
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h2 className="font-jakarta font-extrabold text-xl sm:text-2xl text-fazo-navy mb-1.5 tracking-tight">
+                  <h2 className="font-jakarta font-extrabold text-xl sm:text-2xl text-faazo-navy mb-1.5 tracking-tight">
                     Send Us a Message
                   </h2>
-                  <p className="font-sans text-xs text-fazo-gray mb-8">
+                  <p className="font-sans text-xs text-faazo-gray mb-8">
                     Fill out the form below and our clinical relations team will respond within 24 hours.
                   </p>
 
@@ -237,7 +237,7 @@ export const ContactPage = () => {
                     {/* Name & Email Row */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="name" className="block text-[10px] font-bold text-fazo-navy uppercase mb-1.5">Full Name *</label>
+                        <label htmlFor="name" className="block text-[10px] font-bold text-faazo-navy uppercase mb-1.5">Full Name *</label>
                         <input
                           id="name"
                           type="text"
@@ -256,7 +256,7 @@ export const ContactPage = () => {
                         )}
                       </div>
                       <div>
-                        <label htmlFor="email" className="block text-[10px] font-bold text-fazo-navy uppercase mb-1.5">Email Address *</label>
+                        <label htmlFor="email" className="block text-[10px] font-bold text-faazo-navy uppercase mb-1.5">Email Address *</label>
                         <input
                           id="email"
                           type="email"
@@ -279,7 +279,7 @@ export const ContactPage = () => {
                     {/* Phone & Company Row */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="phone" className="block text-[10px] font-bold text-fazo-navy uppercase mb-1.5">Phone Number *</label>
+                        <label htmlFor="phone" className="block text-[10px] font-bold text-faazo-navy uppercase mb-1.5">Phone Number *</label>
                         <input
                           id="phone"
                           type="tel"
@@ -298,7 +298,7 @@ export const ContactPage = () => {
                         )}
                       </div>
                       <div>
-                        <label htmlFor="company" className="block text-[10px] font-bold text-fazo-navy uppercase mb-1.5">Company / Clinic Name</label>
+                        <label htmlFor="company" className="block text-[10px] font-bold text-faazo-navy uppercase mb-1.5">Company / Clinic Name</label>
                         <input
                           id="company"
                           type="text"
@@ -313,7 +313,7 @@ export const ContactPage = () => {
 
                     {/* Subject */}
                     <div>
-                      <label htmlFor="subject" className="block text-[10px] font-bold text-fazo-navy uppercase mb-1.5">Subject</label>
+                      <label htmlFor="subject" className="block text-[10px] font-bold text-faazo-navy uppercase mb-1.5">Subject</label>
                       <input
                         id="subject"
                         type="text"
@@ -327,7 +327,7 @@ export const ContactPage = () => {
 
                     {/* Message */}
                     <div>
-                      <label htmlFor="message" className="block text-[10px] font-bold text-fazo-navy uppercase mb-1.5">Message *</label>
+                      <label htmlFor="message" className="block text-[10px] font-bold text-faazo-navy uppercase mb-1.5">Message *</label>
                       <textarea
                         id="message"
                         name="message"
@@ -379,8 +379,8 @@ export const ContactPage = () => {
                   <div className="w-16 h-16 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-500 shadow-inner">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
-                  <h3 className="font-jakarta font-extrabold text-xl text-fazo-navy">Message Received!</h3>
-                  <p className="font-sans text-xs sm:text-sm text-fazo-gray leading-relaxed max-w-md mx-auto">
+                  <h3 className="font-jakarta font-extrabold text-xl text-faazo-navy">Message Received!</h3>
+                  <p className="font-sans text-xs sm:text-sm text-faazo-gray leading-relaxed max-w-md mx-auto">
                     Thank you for reaching out. Your message has been successfully logged. Our clinical relations desk will review your details and contact you shortly.
                   </p>
                   <button
@@ -398,10 +398,10 @@ export const ContactPage = () => {
 
         {/* BOTTOM OPTIONAL WIDGET SECTION */}
         <div className="w-full text-center">
-          <span className="font-sans font-bold text-[10px] tracking-wider text-fazo-gray uppercase mb-3 block">
+          <span className="font-sans font-bold text-[10px] tracking-wider text-faazo-gray uppercase mb-3 block">
             NEED IMMEDIATE ASSISTANCE?
           </span>
-          <h3 className="font-jakarta font-extrabold text-lg text-fazo-navy mb-8">
+          <h3 className="font-jakarta font-extrabold text-lg text-faazo-navy mb-8">
             Connect With Our Specialized Desks
           </h3>
 
@@ -411,8 +411,8 @@ export const ContactPage = () => {
               <div className="w-10 h-10 rounded-xl bg-sky-50 flex items-center justify-center text-sky-600 border border-sky-100 shadow-inner mb-3">
                 <Phone className="w-5 h-5" />
               </div>
-              <h4 className="font-jakarta font-bold text-sm text-fazo-navy mb-1.5">Direct Support Hotline</h4>
-              <p className="font-sans text-[11px] text-fazo-gray leading-relaxed mb-4">
+              <h4 className="font-jakarta font-bold text-sm text-faazo-navy mb-1.5">Direct Support Hotline</h4>
+              <p className="font-sans text-[11px] text-faazo-gray leading-relaxed mb-4">
                 Call our technical engineering helpdesk for urgent installations support.
               </p>
               <a href="tel:+918848922846" className="text-xs font-extrabold text-[#0A7C86] hover:underline">+91 88489 22846</a>
@@ -423,11 +423,11 @@ export const ContactPage = () => {
               <div className="w-10 h-10 rounded-xl bg-[#E6F3F5] flex items-center justify-center text-[#0A7C86] border border-[#0A7C86]/10 shadow-inner mb-3">
                 <Mail className="w-5 h-5" />
               </div>
-              <h4 className="font-jakarta font-bold text-sm text-fazo-navy mb-1.5">Clinical Relations Inbox</h4>
-              <p className="font-sans text-[11px] text-fazo-gray leading-relaxed mb-4">
+              <h4 className="font-jakarta font-bold text-sm text-faazo-navy mb-1.5">Clinical Relations Inbox</h4>
+              <p className="font-sans text-[11px] text-faazo-gray leading-relaxed mb-4">
                 For sales proposals, clinic plans, or custom equipment procurement requests.
               </p>
-              <a href="mailto:info@fazo.in" className="text-xs font-extrabold text-[#0A7C86] hover:underline">info@fazo.in</a>
+              <a href="mailto:info@faazo.in" className="text-xs font-extrabold text-[#0A7C86] hover:underline">info@faazo.in</a>
             </div>
 
             {/* Dealer Support */}
@@ -435,11 +435,11 @@ export const ContactPage = () => {
               <div className="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 border border-indigo-100 shadow-inner mb-3">
                 <Globe className="w-5 h-5" />
               </div>
-              <h4 className="font-jakarta font-bold text-sm text-fazo-navy mb-1.5">Dealer & Exports Desk</h4>
-              <p className="font-sans text-[11px] text-fazo-gray leading-relaxed mb-4">
+              <h4 className="font-jakarta font-bold text-sm text-faazo-navy mb-1.5">Dealer & Exports Desk</h4>
+              <p className="font-sans text-[11px] text-faazo-gray leading-relaxed mb-4">
                 Enquire about regional distributorships or global export capabilities.
               </p>
-              <a href="mailto:exports@faazodent.com" className="text-xs font-extrabold text-[#0A7C86] hover:underline">exports@faazodent.com</a>
+              <a href="mailto:info@faazo.in" className="text-xs font-extrabold text-[#0A7C86] hover:underline">info@faazo.in</a>
             </div>
           </div>
         </div>

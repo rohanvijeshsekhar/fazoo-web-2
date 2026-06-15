@@ -72,7 +72,7 @@ export const AdminLayout = () => {
       applications: 'Applications',
       enquiries: 'Enquiries',
     };
-    document.title = `${titleMap[pathSegment] || 'Admin'} — FAZO Admin`;
+    document.title = `${titleMap[pathSegment] || 'Admin'} — FAAZO Admin`;
   }, [location.pathname]);
 
   const handleLogout = () => {
@@ -82,7 +82,7 @@ export const AdminLayout = () => {
 
   const adminUser = (() => {
     try {
-      const stored = localStorage.getItem('fazo_admin_user');
+      const stored = localStorage.getItem('faazo_admin_user');
       return stored ? JSON.parse(stored) : {};
     } catch { return {}; }
   })();
@@ -95,7 +95,7 @@ export const AdminLayout = () => {
         {/* Sidebar */}
         <aside className={`admin-sidebar${sidebarOpen ? ' open' : ''}`}>
           <div className="admin-sidebar-logo">
-            <img src="/hero/fazologo.png" alt="FAZO" />
+            <img src="/hero/faazologo.png" alt="FAAZO" />
             <span className="admin-badge">ADMIN</span>
             <button
               onClick={() => setSidebarOpen(false)}

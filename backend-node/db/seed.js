@@ -158,12 +158,12 @@ function seed() {
     {
       name: 'High Speed Handpiece', slug: 'high-speed-handpiece', category_slug: 'dental-handpieces',
       short_description: 'Precision engineered high-speed turbine with integrated LED light.',
-      description: "FAZO high-speed turbine handpieces represent the pinnacle of precise engineering. With zero-vibration rotation and 22W turbine torque, this handpiece ensures efficient cutting with maximum comfort for both the dentist and the patient.",
+      description: "FAAZO high-speed turbine handpieces represent the pinnacle of precise engineering. With zero-vibration rotation and 22W turbine torque, this handpiece ensures efficient cutting with maximum comfort for both the dentist and the patient.",
       features: ['Quattro water spray system for optimal cooling', 'Ceramic bearings for extended longevity', 'Integrated LED light for shadows-free view', 'Anti-retraction clean-head system'],
       specifications: [{ key: 'Speed', value: '350,000 - 420,000 RPM' }, { key: 'Chuck Type', value: 'Push Button' }, { key: 'Connection', value: 'Standard 4-hole / coupling' }, { key: 'Noise Level', value: '≤ 60 dB' }],
       image: 'hero/handpiece_4_3.webp', display_order: 1,
-      seo_title: 'FAZO High Speed LED Handpiece - Premium Dental Turbine',
-      seo_description: 'Shop high speed handpieces by FAZO. Low noise, ceramic bearings, micro-LED optics, and premium water sprays for restorative dentistry.'
+      seo_title: 'FAAZO High Speed LED Handpiece - Premium Dental Turbine',
+      seo_description: 'Shop high speed handpieces by FAAZO. Low noise, ceramic bearings, micro-LED optics, and premium water sprays for restorative dentistry.'
     },
     {
       name: 'Low Speed Handpiece', slug: 'low-speed-handpiece', category_slug: 'dental-handpieces',
@@ -172,8 +172,8 @@ function seed() {
       features: ['Ergonomic non-slip grip handles', '1:1 direct transmission speed ratio', 'Internal/External water spray option', 'Forward and reverse rotation controls'],
       specifications: [{ key: 'Max Speed', value: '22,000 RPM' }, { key: 'Bearings', value: 'Stainless Steel' }, { key: 'Type', value: 'Straight & Contra-Angle kit' }, { key: 'Pressure', value: '0.3 MPa' }],
       image: 'hero/handpiece_4_3.webp', display_order: 2,
-      seo_title: 'FAZO Low Speed Restorative Handpiece',
-      seo_description: 'FAZO low-speed dental handpiece kit. Prophylaxis, contra-angles, straight attachments for laboratory and clinical finishing.'
+      seo_title: 'FAAZO Low Speed Restorative Handpiece',
+      seo_description: 'FAAZO low-speed dental handpiece kit. Prophylaxis, contra-angles, straight attachments for laboratory and clinical finishing.'
     },
     {
       name: 'HD Wireless Camera', slug: 'hd-wireless-camera', category_slug: 'intraoral-cameras',
@@ -182,8 +182,8 @@ function seed() {
       features: ['True 1080p HD image capture', 'Wireless transmitter works up to 10 meters', '8 high-power adjustable LED lights', 'Compatible with major dental imaging software'],
       specifications: [{ key: 'Sensor', value: '1/4 CMOS 2.0 Megapixel' }, { key: 'Battery Life', value: '3 hours continuous use' }, { key: 'Focus Range', value: '3mm - 40mm auto-focus' }, { key: 'OS Support', value: 'Windows, macOS, Android' }],
       image: 'hero/camera_4_3.webp', display_order: 1,
-      seo_title: 'FAZO HD Wireless Intraoral Dental Camera',
-      seo_description: 'Capture crystal-clear dental diagnostics with FAZO HD Wireless Intraoral Camera. 1080p CMOS sensor with auto-focus lens.'
+      seo_title: 'FAAZO HD Wireless Intraoral Dental Camera',
+      seo_description: 'Capture crystal-clear dental diagnostics with FAAZO HD Wireless Intraoral Camera. 1080p CMOS sensor with auto-focus lens.'
     },
     {
       name: 'USB Wired Camera', slug: 'usb-wired-camera', category_slug: 'intraoral-cameras',
@@ -192,8 +192,8 @@ function seed() {
       features: ['Direct USB 2.0 connection, no power cords', 'Anti-fog optical lens glass', 'Dual capture buttons for easy grip ergonomics', 'Lightweight medical-grade plastic shell'],
       specifications: [{ key: 'Cable Length', value: '2.5 meters' }, { key: 'Resolution', value: '1280 x 720' }, { key: 'Light Source', value: '6 LED white bulbs' }, { key: 'Weight', value: '45 grams' }],
       image: 'hero/camera_4_3.webp', display_order: 2,
-      seo_title: 'FAZO USB Wired Diagnostic Intraoral Camera',
-      seo_description: 'FAZO USB dental camera. Budget-friendly, plug-and-play setup for patient communication and tooth photography.'
+      seo_title: 'FAAZO USB Wired Diagnostic Intraoral Camera',
+      seo_description: 'FAAZO USB dental camera. Budget-friendly, plug-and-play setup for patient communication and tooth photography.'
     },
     {
       name: 'Cordless Curing Light', slug: 'cordless-curing-light', category_slug: 'led-light-cure-units',
@@ -202,8 +202,8 @@ function seed() {
       features: ['High power output up to 2000 mW/cm²', 'Dual wavelength to cure all brand composites', 'Multiple preset modes: Normal, High Power, Pulse', 'Ergonomic pen-grip style casing'],
       specifications: [{ key: 'Wavelength Range', value: '385 - 515 nm' }, { key: 'Battery Type', value: 'Li-Ion rechargeable' }, { key: 'Light Guide', value: '8mm black optical fiber guide' }, { key: 'Charging Station', value: 'Wireless induction charging pad' }],
       image: 'hero/curing_light_4_3.webp', display_order: 1,
-      seo_title: 'FAZO Cordless LED Curing Light - Wide Spectrum',
-      seo_description: 'Polymerize composite materials in 5 seconds with FAZO dual-wavelength curing lights. High intensity output up to 2000mW.'
+      seo_title: 'FAAZO Cordless LED Curing Light - Wide Spectrum',
+      seo_description: 'Polymerize composite materials in 5 seconds with FAAZO dual-wavelength curing lights. High intensity output up to 2000mW.'
     },
     {
       name: 'Comfort Clinic Chair', slug: 'comfort-clinic-chair', category_slug: 'dental-chairs',
@@ -212,17 +212,17 @@ function seed() {
       features: ['Luxury memory foam leather seat cushioning', '9 programmable chair memory positions', 'Integrated doctor and assistant console hubs', 'Shadowless LED operation lamp with sensor controls'],
       specifications: [{ key: 'Load Capacity', value: '185 kg' }, { key: 'Elevation Range', value: '380mm - 780mm' }, { key: 'Cuspidor', value: '90° rotating ceramic spittoon' }, { key: 'Operation Lamp', value: '8,000 - 30,000 Lux adjustable' }],
       image: 'hero/chair_4_3.webp', display_order: 1,
-      seo_title: 'FAZO Comfort Clinic Ergonomic Dental Chair',
-      seo_description: 'Upgrade your clinic with FAZO Comfort Chairs. Quiet operation, premium styling, adjustable memory foam, LED lighting systems.'
+      seo_title: 'FAAZO Comfort Clinic Ergonomic Dental Chair',
+      seo_description: 'Upgrade your clinic with FAAZO Comfort Chairs. Quiet operation, premium styling, adjustable memory foam, LED lighting systems.'
     },
     {
-      name: 'FAZO Scan 3D', slug: 'fazo-scan-3d', category_slug: '3d-oral-scanners',
+      name: 'FAAZO Scan 3D', slug: 'faazo-scan-3d', category_slug: '3d-oral-scanners',
       short_description: 'Intelligent intraoral scanner with color texture mapping.',
       description: 'Next-gen intraoral scanner providing absolute precision digital impressions. Powered by AI scanning software that filters tongue and cheek structures in real-time.',
       features: ['Powder-free scanning workflow', 'High accuracy scanning under 15 microns', 'True color 3D digital impressions', 'Cloud platform integration for dental labs'],
       specifications: [{ key: 'Scan Speed', value: 'Full arch under 90 seconds' }, { key: 'Format Output', value: 'STL, PLY, OBJ' }, { key: 'Handpiece Weight', value: '245 grams' }, { key: 'Tip Autoclave', value: 'Up to 100 cycles at 134°C' }],
       image: 'hero/scanner_4_3.webp', display_order: 1,
-      seo_title: 'FAZO Scan 3D Intraoral Dental Scanner',
+      seo_title: 'FAAZO Scan 3D Intraoral Dental Scanner',
       seo_description: 'Modern powder-free 3D intraoral scanner. Highly accurate digital dental impression scanner with instant lab exports.'
     },
     {
@@ -232,8 +232,8 @@ function seed() {
       features: ['100% oil-free motor for non-toxic clinical air', 'Internal rust-preventative epoxy coated tank', 'Double cooling fans for long run durations', 'Sound-absorbing metal cabinets'],
       specifications: [{ key: 'Tank Volume', value: '50 Liters' }, { key: 'Noise Level', value: '52 dB (Ultra Silent)' }, { key: 'Output Flow', value: '115 L/min at 5 Bar' }, { key: 'Max Pressure', value: '8 Bar' }],
       image: 'hero/compressor_4_3.webp', display_order: 1,
-      seo_title: 'FAZO Oil-Free Silent Dental Compressor 50L',
-      seo_description: 'FAZO 50L silent medical air compressor. Oil-free, dry air supply for single chair dental clinic setups.'
+      seo_title: 'FAAZO Oil-Free Silent Dental Compressor 50L',
+      seo_description: 'FAAZO 50L silent medical air compressor. Oil-free, dry air supply for single chair dental clinic setups.'
     },
     {
       name: 'Ultrasonic Scaler', slug: 'ultrasonic-scaler', category_slug: 'advanced-equipment-accessories',
@@ -242,8 +242,8 @@ function seed() {
       features: ['Auto-feedback system stabilizes power outputs', 'Detachable autoclavable handpiece with LED', 'Compatible with scaling, perio, and endo tips', 'Self-contained water supply system bottle'],
       specifications: [{ key: 'Frequency', value: '28 kHz ± 3 kHz' }, { key: 'Power Output', value: '3W to 20W' }, { key: 'Water Pressure', value: '0.01 MPa - 0.5 MPa' }, { key: 'Tips Supplied', value: '6 assorted titanium tips' }],
       image: 'hero/accessories_4_3.webp', display_order: 1,
-      seo_title: 'FAZO Smart LED Ultrasonic Scaler',
-      seo_description: 'High frequency ultrasonic scaling system by FAZO. Adjustable water flows, auto-feedback control, perio/endo tips.'
+      seo_title: 'FAAZO Smart LED Ultrasonic Scaler',
+      seo_description: 'High frequency ultrasonic scaling system by FAAZO. Adjustable water flows, auto-feedback control, perio/endo tips.'
     }
   ];
 
@@ -301,12 +301,12 @@ function seed() {
       id: 1, title: 'Sales Executive', salary: '₹30,000 - ₹50,000 / Month',
       description: {
         paragraphs: [
-          'Join FAZO as a Sales Executive and drive the growth of our advanced dental technology equipment. In this role, you will build and maintain solid relationships with dental professionals, clinics, and regional institutions.',
+          'Join FAAZO as a Sales Executive and drive the growth of our advanced dental technology equipment. In this role, you will build and maintain solid relationships with dental professionals, clinics, and regional institutions.',
           'You will be responsible for showcasing our premium products, organizing clinical demonstrations, and meeting regional sales targets while delivering an exceptional service experience.'
         ],
         responsibilities: [
           'Establish and nurture relationships with dental clinics, hospitals, and distributor networks.',
-          'Conduct live clinical demonstrations of FAZO dental handpieces, chairs, and imaging units.',
+          'Conduct live clinical demonstrations of FAAZO dental handpieces, chairs, and imaging units.',
           'Prepare sales contracts, negotiate partnerships, and achieve monthly business expansion targets.',
           'Collect customer feedback and report market trends to the product engineering team.'
         ],
@@ -323,11 +323,11 @@ function seed() {
       id: 2, title: 'Service Engineer', salary: '₹25,000 - ₹40,000 / Month',
       description: {
         paragraphs: [
-          'FAZO is looking for a dedicated Service Engineer to provide technical support, product installation, and preventative maintenance for our medical and dental chair units.',
-          "You will work closely with clinical staff to ensure maximum equipment uptime, troubleshoot hardware/software interfaces, and maintain FAZO's strict quality standards."
+          'FAAZO is looking for a dedicated Service Engineer to provide technical support, product installation, and preventative maintenance for our medical and dental chair units.',
+          "You will work closely with clinical staff to ensure maximum equipment uptime, troubleshoot hardware/software interfaces, and maintain FAAZO's strict quality standards."
         ],
         responsibilities: [
-          'Perform on-site installation, commissioning, and validation of FAZO dental chairs and compressors.',
+          'Perform on-site installation, commissioning, and validation of FAAZO dental chairs and compressors.',
           'Diagnose, troubleshoot, and repair equipment malfunctions under tight schedules.',
           'Conduct preventative maintenance visits and provide technical training to clinic assistants and dental engineers.',
           'Maintain accurate service logs, parts inventory, and support ticket documentations.'
@@ -345,12 +345,12 @@ function seed() {
       id: 3, title: 'Marketing Executive', salary: '₹28,000 - ₹45,000 / Month',
       description: {
         paragraphs: [
-          "We are looking for a creative Marketing Executive to drive brand awareness and digital presence for FAZO's modern healthcare products.",
+          "We are looking for a creative Marketing Executive to drive brand awareness and digital presence for FAAZO's modern healthcare products.",
           'You will manage social media channels, coordinate clinical webinars, create graphic/video collateral, and organize exhibitions to engage dental professionals globally.'
         ],
         responsibilities: [
           'Develop and execute B2B marketing campaigns spanning email, search, and social media.',
-          'Create premium digital copy, brochures, product reels, and banners aligning with the FAZO brand style.',
+          'Create premium digital copy, brochures, product reels, and banners aligning with the FAAZO brand style.',
           'Coordinate and host digital webinars, product launch events, and dental exhibition booths.',
           'Track campaign metrics and analyze ROI to optimize lead generation workflows.'
         ],

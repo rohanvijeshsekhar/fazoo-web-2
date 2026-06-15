@@ -10,7 +10,7 @@ module.exports = {
         jakarta: ['Plus Jakarta Sans', 'sans-serif'],
       },
       colors: {
-        fazo: {
+        faazo: {
           teal: '#006F7A',
           cyan: '#2EA5B0',
           navy: '#0B2530',

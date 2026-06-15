@@ -1,5 +1,5 @@
 /**
- * build.js — Cross-platform build script for FAZO single-deployment.
+ * build.js — Cross-platform build script for FAAZO single-deployment.
  * Installs frontend deps, runs Vite build, then copies dist → backend-node/public.
  * backend-node is fully self-contained — no files outside this directory are required.
  * Works identically on Windows, Linux, and macOS.

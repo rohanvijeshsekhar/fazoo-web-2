@@ -36,7 +36,7 @@ export const getImageUrl = (url) => {
 
 // Generate auth headers
 const getAuthHeaders = () => {
-  const token = localStorage.getItem('fazo_admin_token');
+  const token = localStorage.getItem('faazo_admin_token');
   return token ? { 'Authorization': `Token ${token}` } : {};
 };
 
@@ -52,18 +52,18 @@ export const loginAdmin = async (username, password) => {
     throw new Error(data.non_field_errors?.[0] || 'Invalid credentials');
   }
   const data = await res.json();
-  localStorage.setItem('fazo_admin_token', data.token);
-  localStorage.setItem('fazo_admin_user', JSON.stringify(data));
+  localStorage.setItem('faazo_admin_token', data.token);
+  localStorage.setItem('faazo_admin_user', JSON.stringify(data));
   return data;
 };
 
 export const logoutAdmin = () => {
-  localStorage.removeItem('fazo_admin_token');
-  localStorage.removeItem('fazo_admin_user');
+  localStorage.removeItem('faazo_admin_token');
+  localStorage.removeItem('faazo_admin_user');
 };
 
 export const isLoggedIn = () => {
-  return !!localStorage.getItem('fazo_admin_token');
+  return !!localStorage.getItem('faazo_admin_token');
 };
 
 // --- Statistics API ---

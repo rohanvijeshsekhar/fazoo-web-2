@@ -1,0 +1,13 @@
+{
+  "name": "faazo-monorepo",
+  "version": "1.0.0",
+  "description": "Monorepo root for FAAZO Dental Technology",
+  "private": true,
+  "scripts": {
+    "install-backend": "npm install --prefix backend-node",
+    "build-backend": "npm run build --prefix backend-node",
+    "start-backend": "npm start --prefix backend-node",
+    "build": "npm run install-backend && npm run build-backend",
+    "start": "npm run start-backend"
+  }
+}

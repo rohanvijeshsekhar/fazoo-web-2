@@ -34,7 +34,7 @@ export const CategoryPage = () => {
           ? prods.filter(p => p.active !== false).sort((a, b) => (a.display_order || 0) - (b.display_order || 0))
           : [];
         setProducts(activeProds);
-        document.title = `${cat.name} | FAZO Dental Technology`;
+        document.title = `${cat.name} | FAAZO Dental Technology`;
       } else {
         setCategory(null);
         setProducts([]);
@@ -62,8 +62,8 @@ export const CategoryPage = () => {
     return (
       <div className="w-full flex-grow py-32 flex flex-col items-center justify-center bg-gradient-to-tr from-[#E6F3F5] via-[#F4F9FA] to-[#EAF2F4] px-6 text-center">
         <AlertCircle className="w-16 h-16 text-[#0A7C86] mb-4" />
-        <h2 className="font-jakarta font-extrabold text-2xl text-fazo-navy mb-2">Category Not Found</h2>
-        <p className="font-sans text-sm text-fazo-gray max-w-sm mb-6 leading-relaxed">
+        <h2 className="font-jakarta font-extrabold text-2xl text-faazo-navy mb-2">Category Not Found</h2>
+        <p className="font-sans text-sm text-faazo-gray max-w-sm mb-6 leading-relaxed">
           The product category you are looking for does not exist or has been removed from the catalog.
         </p>
         <Link to="/products" className="btn-3d-teal text-white px-6 py-3 rounded-lg font-jakarta font-bold text-sm">
@@ -77,7 +77,7 @@ export const CategoryPage = () => {
     <div className="w-full flex-grow pb-24 relative bg-gradient-to-tr from-[#E6F3F5] via-[#F4F9FA] to-[#EAF2F4]">
       {/* Breadcrumbs */}
       <div className="w-full max-w-[1300px] mx-auto px-6 lg:px-10 pt-6">
-        <div className="flex items-center gap-1.5 text-xs font-semibold text-fazo-gray text-left">
+        <div className="flex items-center gap-1.5 text-xs font-semibold text-faazo-gray text-left">
           <Link to="/products" className="hover:text-[#0A7C86] transition-colors">Products</Link>
           <ChevronRight className="w-3.5 h-3.5" />
           <span className="text-[#0A7C86]">{category.name}</span>
@@ -106,10 +106,10 @@ export const CategoryPage = () => {
               <span className="text-[11px] font-jakarta font-extrabold tracking-[0.25em] text-[#0A7C86] uppercase mb-4 px-3 py-1 rounded-full bg-[#0A7C86]/5 border border-[#0A7C86]/10 shadow-sm inline-block">
                 Category Showcase
               </span>
-              <h1 className="font-jakarta font-extrabold text-4xl sm:text-5xl lg:text-[56px] leading-[1.1] text-fazo-navy tracking-tight mb-6">
+              <h1 className="font-jakarta font-extrabold text-4xl sm:text-5xl lg:text-[56px] leading-[1.1] text-faazo-navy tracking-tight mb-6">
                 {category.name}
               </h1>
-              <p className="font-sans text-sm sm:text-base md:text-[17px] leading-relaxed text-fazo-gray max-w-[480px] mb-8">
+              <p className="font-sans text-sm sm:text-base md:text-[17px] leading-relaxed text-faazo-gray max-w-[480px] mb-8">
                 {category.description}
               </p>
               
@@ -141,7 +141,7 @@ export const CategoryPage = () => {
 
             {/* Right Side: Free-standing Product Showcase (48%) */}
             <div className="w-full lg:w-[48%] flex items-center justify-center relative py-6 lg:py-0">
-              {/* Soft FAZO green radial glow behind the product */}
+              {/* Soft FAAZO green radial glow behind the product */}
               <div className="absolute w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] rounded-full bg-[#0A7C86]/10 blur-[85px] pointer-events-none z-0"></div>
               
               {/* Aspect Ratio Container for Larger Image */}
@@ -162,10 +162,10 @@ export const CategoryPage = () => {
       {category.overview && (
         <div className="w-full max-w-[1300px] mx-auto px-6 lg:px-10 pb-16">
           <div className="bg-white/40 backdrop-blur-md rounded-2xl border border-white/40 p-8 text-left">
-            <h2 className="font-jakarta font-bold text-lg text-fazo-navy mb-3 flex items-center gap-2">
+            <h2 className="font-jakarta font-bold text-lg text-faazo-navy mb-3 flex items-center gap-2">
               <ShieldCheck className="w-5 h-5 text-[#0A7C86]" /> About {category.name}
             </h2>
-            <p className="font-sans text-sm sm:text-[15px] leading-relaxed text-fazo-gray max-w-[900px]">
+            <p className="font-sans text-sm sm:text-[15px] leading-relaxed text-faazo-gray max-w-[900px]">
               {category.overview}
             </p>
           </div>
@@ -174,20 +174,20 @@ export const CategoryPage = () => {
 
       {/* Section 3: Products Under This Category */}
       <div id="models-grid-section" className="w-full max-w-[1300px] mx-auto px-6 lg:px-10 scroll-mt-24">
-        <div className="border-b border-fazo-border/70 pb-4 mb-8 text-left">
-          <h3 className="font-jakarta font-extrabold text-xl sm:text-2xl text-fazo-navy">
+        <div className="border-b border-faazo-border/70 pb-4 mb-8 text-left">
+          <h3 className="font-jakarta font-extrabold text-xl sm:text-2xl text-faazo-navy">
             Available Models
           </h3>
-          <p className="font-sans text-xs sm:text-sm text-fazo-gray mt-1">
+          <p className="font-sans text-xs sm:text-sm text-faazo-gray mt-1">
             Browse high-performance {category.name.toLowerCase()} catalogued below.
           </p>
         </div>
 
         {products.length === 0 ? (
           <div className="bg-white/40 backdrop-blur-md rounded-2xl border border-white/40 p-12 text-center">
-            <AlertCircle className="w-10 h-10 text-fazo-gray/60 mx-auto mb-3" />
-            <h4 className="font-jakarta font-bold text-base text-fazo-navy mb-1">No Models Registered</h4>
-            <p className="font-sans text-xs text-fazo-gray max-w-xs mx-auto mb-4">
+            <AlertCircle className="w-10 h-10 text-faazo-gray/60 mx-auto mb-3" />
+            <h4 className="font-jakarta font-bold text-base text-faazo-navy mb-1">No Models Registered</h4>
+            <p className="font-sans text-xs text-faazo-gray max-w-xs mx-auto mb-4">
               Products for this category are currently being listed in the catalog. Please check back later.
             </p>
             <Link to="/products" className="text-xs font-bold text-[#0A7C86] hover:underline">
@@ -214,10 +214,10 @@ export const CategoryPage = () => {
                 {/* Card Details: Flex grow to guarantee identical heights */}
                 <div className="p-5 flex flex-col flex-grow text-left justify-between bg-gradient-to-b from-white/10 to-white/35">
                   <div className="flex-grow">
-                    <h4 className="font-jakarta font-bold text-[15px] text-fazo-navy mb-1.5 group-hover:text-[#0A7C86] transition-colors leading-tight line-clamp-1">
+                    <h4 className="font-jakarta font-bold text-[15px] text-faazo-navy mb-1.5 group-hover:text-[#0A7C86] transition-colors leading-tight line-clamp-1">
                       {prod.name}
                     </h4>
-                    <p className="font-sans text-[12px] text-fazo-gray leading-normal mb-4 line-clamp-2">
+                    <p className="font-sans text-[12px] text-faazo-gray leading-normal mb-4 line-clamp-2">
                       {prod.shortDescription}
                     </p>
                   </div>

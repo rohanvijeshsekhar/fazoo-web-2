@@ -158,8 +158,8 @@ export const CareersPage = () => {
   return (
     <div className="w-full flex-grow relative overflow-hidden py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-tr from-[#E6F3F5] via-[#F4F9FA] to-[#EAF2F4] text-left">
       {/* Background Floating Blobs */}
-      <div className="absolute top-[8%] right-[-8%] w-[350px] sm:w-[450px] h-[350px] sm:h-[450px] rounded-full bg-fazo-cyan/20 blur-[100px] sm:blur-[130px] animate-float-slow pointer-events-none z-0"></div>
-      <div className="absolute top-[45%] left-[-8%] w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-fazo-teal/15 blur-[110px] sm:blur-[140px] animate-float-medium pointer-events-none z-0"></div>
+      <div className="absolute top-[8%] right-[-8%] w-[350px] sm:w-[450px] h-[350px] sm:h-[450px] rounded-full bg-faazo-cyan/20 blur-[100px] sm:blur-[130px] animate-float-slow pointer-events-none z-0"></div>
+      <div className="absolute top-[45%] left-[-8%] w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-faazo-teal/15 blur-[110px] sm:blur-[140px] animate-float-medium pointer-events-none z-0"></div>
       <div className="absolute bottom-[5%] right-[20%] w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] rounded-full bg-[#82E0E8]/15 blur-[90px] sm:blur-[120px] pointer-events-none z-0 animate-float-fast"></div>
 
       <div className="max-w-[1100px] mx-auto relative z-10 flex flex-col gap-10 pt-10">
@@ -174,20 +174,20 @@ export const CareersPage = () => {
           
           <div className="max-w-2xl">
             <span className="font-sans font-extrabold text-[10px] tracking-[0.25em] text-[#0A7C86] bg-[#0A7C86]/5 border border-[#0A7C86]/10 px-4 py-1.5 rounded-full uppercase mb-5 inline-block shadow-sm">
-              CAREERS AT FAZO
+              CAREERS AT FAAZO
             </span>
-            <h1 className="font-jakarta font-extrabold text-3xl sm:text-4xl lg:text-[46px] leading-[1.12] text-fazo-navy mb-5 tracking-tight">
+            <h1 className="font-jakarta font-extrabold text-3xl sm:text-4xl lg:text-[46px] leading-[1.12] text-faazo-navy mb-5 tracking-tight">
               Build the Future of <br className="hidden sm:inline" />
               <span className="text-[#0A7C86]">Dental Technology</span>
             </h1>
-            <p className="font-sans text-xs sm:text-sm md:text-[15px] text-fazo-gray leading-relaxed max-w-xl">
+            <p className="font-sans text-xs sm:text-sm md:text-[15px] text-faazo-gray leading-relaxed max-w-xl">
               Join a growing team dedicated to innovation, excellence, and transforming dental healthcare through advanced medical technology solutions. Explore our open positions below.
             </p>
           </div>
         </div>
 
         {/* SEARCH AND FILTERS CONTROLS */}
-        <div className="w-full flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-fazo-border/40 pb-5">
+        <div className="w-full flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-faazo-border/40 pb-5">
           {/* Search bar */}
           <div className="relative max-w-sm w-full">
             <input 
@@ -195,9 +195,9 @@ export const CareersPage = () => {
               placeholder="Search positions..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-4 py-3 rounded-xl border border-white/60 bg-[#FAFBFD]/90 focus:outline-none focus:border-[#0A7C86] focus:ring-1 focus:ring-[#0A7C86] text-xs font-semibold text-fazo-navy shadow-inner transition-all duration-300 focus:bg-white"
+              className="w-full pl-9 pr-4 py-3 rounded-xl border border-white/60 bg-[#FAFBFD]/90 focus:outline-none focus:border-[#0A7C86] focus:ring-1 focus:ring-[#0A7C86] text-xs font-semibold text-faazo-navy shadow-inner transition-all duration-300 focus:bg-white"
             />
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-fazo-navy/40 pointer-events-none" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-faazo-navy/40 pointer-events-none" />
           </div>
 
           {/* Department Pills */}
@@ -209,7 +209,7 @@ export const CareersPage = () => {
                 className={`py-2 px-4 rounded-xl text-xs font-bold transition-all border cursor-pointer ${
                   selectedDept === dept
                     ? 'bg-[#0A7C86] border-transparent text-white shadow-sm'
-                    : 'bg-[#FAFBFD]/90 border-white/60 text-fazo-navy hover:bg-white hover:border-[#0A7C86]/30'
+                    : 'bg-[#FAFBFD]/90 border-white/60 text-faazo-navy hover:bg-white hover:border-[#0A7C86]/30'
                 }`}
               >
                 {dept} {dept !== 'All' ? 'Roles' : ''}
@@ -240,30 +240,30 @@ export const CareersPage = () => {
                         <span className="px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider bg-[#E6F3F5] text-[#0A7C86] border border-[#0A7C86]/10">
                           {job.title.includes('Engineer') ? 'Engineering' : job.title.includes('Sales') ? 'Sales' : 'Marketing'}
                         </span>
-                        <div className="flex items-center gap-1 text-[10px] text-fazo-gray font-bold">
+                        <div className="flex items-center gap-1 text-[10px] text-faazo-gray font-bold">
                           <Clock className="w-3 h-3 text-[#0A7C86]" /> Full-Time
                         </div>
                       </div>
 
                       {/* Job Title */}
-                      <h3 className="font-jakarta font-extrabold text-lg text-fazo-navy mb-2 tracking-tight group-hover:text-[#0A7C86] transition-colors leading-snug">
+                      <h3 className="font-jakarta font-extrabold text-lg text-faazo-navy mb-2 tracking-tight group-hover:text-[#0A7C86] transition-colors leading-snug">
                         {job.title}
                       </h3>
 
                       {/* Metadata row */}
                       <div className="flex flex-col gap-2 mb-4 mt-3">
-                        <div className="flex items-center gap-2 text-xs text-fazo-gray font-semibold">
+                        <div className="flex items-center gap-2 text-xs text-faazo-gray font-semibold">
                           <DollarSign className="w-3.5 h-3.5 text-[#0A7C86]" />
                           <span>{job.salary}</span>
                         </div>
-                        <div className="flex items-center gap-2 text-xs text-fazo-gray font-semibold">
+                        <div className="flex items-center gap-2 text-xs text-faazo-gray font-semibold">
                           <Calendar className="w-3.5 h-3.5 text-[#0A7C86]" />
                           <span>Posted {new Date(job.postedDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                         </div>
                       </div>
 
                       {/* Description Preview */}
-                      <p className="font-sans text-xs text-fazo-gray leading-relaxed mb-6 line-clamp-3">
+                      <p className="font-sans text-xs text-faazo-gray leading-relaxed mb-6 line-clamp-3">
                         {job.shortDescription}
                       </p>
                     </div>
@@ -271,7 +271,7 @@ export const CareersPage = () => {
                     {/* Apply Button CTA */}
                     <button
                       onClick={() => handleOpenJob(job)}
-                      className="w-full py-3 bg-white/50 hover:bg-white border border-[#E2EAEB] hover:border-[#0A7C86]/35 text-xs font-extrabold text-fazo-navy hover:text-[#0A7C86] rounded-xl flex items-center justify-center gap-1.5 transition-all duration-300 shadow-sm cursor-pointer"
+                      className="w-full py-3 bg-white/50 hover:bg-white border border-[#E2EAEB] hover:border-[#0A7C86]/35 text-xs font-extrabold text-faazo-navy hover:text-[#0A7C86] rounded-xl flex items-center justify-center gap-1.5 transition-all duration-300 shadow-sm cursor-pointer"
                     >
                       View Details & Apply <ChevronRight className="w-3.5 h-3.5" />
                     </button>
@@ -285,8 +285,8 @@ export const CareersPage = () => {
               <div className="w-16 h-16 rounded-2xl bg-[#E6F3F5] border border-[#0A7C86]/10 flex items-center justify-center text-[#0A7C86] mb-2">
                 <Briefcase className="w-8 h-8" />
               </div>
-              <h3 className="font-jakarta font-extrabold text-lg text-fazo-navy">No Open Positions</h3>
-              <p className="font-sans text-xs sm:text-sm text-fazo-gray leading-relaxed">
+              <h3 className="font-jakarta font-extrabold text-lg text-faazo-navy">No Open Positions</h3>
+              <p className="font-sans text-xs sm:text-sm text-faazo-gray leading-relaxed">
                 No current openings available. Please check back later or submit your details to be considered for future opportunities.
               </p>
             </div>
@@ -304,7 +304,7 @@ export const CareersPage = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="absolute inset-0 bg-fazo-navy/40 backdrop-blur-md"
+              className="absolute inset-0 bg-faazo-navy/40 backdrop-blur-md"
               onClick={() => setIsApplyModalOpen(false)}
             />
 
@@ -319,7 +319,7 @@ export const CareersPage = () => {
               {/* Close Button */}
               <button
                 onClick={() => setIsApplyModalOpen(false)}
-                className="absolute top-4 right-4 p-1.5 rounded-full hover:bg-fazo-light text-fazo-navy/60 hover:text-fazo-navy transition cursor-pointer"
+                className="absolute top-4 right-4 p-1.5 rounded-full hover:bg-faazo-light text-faazo-navy/60 hover:text-faazo-navy transition cursor-pointer"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -327,18 +327,18 @@ export const CareersPage = () => {
               {!submitSuccess ? (
                 <div>
                   {/* Job Detail Header */}
-                  <div className="mb-6 border-b border-fazo-border/50 pb-5">
+                  <div className="mb-6 border-b border-faazo-border/50 pb-5">
                     <span className="px-2.5 py-1 rounded-full text-[9px] font-extrabold uppercase tracking-wider bg-[#E6F3F5] text-[#0A7C86] border border-[#0A7C86]/10 mb-3 inline-block">
                       Position Specifications
                     </span>
-                    <h2 className="font-jakarta font-extrabold text-2xl text-fazo-navy tracking-tight leading-tight">
+                    <h2 className="font-jakarta font-extrabold text-2xl text-faazo-navy tracking-tight leading-tight">
                       {selectedJob.title}
                     </h2>
                     
-                    <div className="flex flex-wrap gap-x-6 gap-y-2 mt-4 text-xs text-fazo-gray font-bold">
+                    <div className="flex flex-wrap gap-x-6 gap-y-2 mt-4 text-xs text-faazo-gray font-bold">
                       <div className="flex items-center gap-1.5">
                         <Building className="w-4 h-4 text-[#0A7C86]" />
-                        <span>FAZO HQ (Kerala, India)</span>
+                        <span>FAAZO HQ (Kerala, India)</span>
                       </div>
                       <div className="flex items-center gap-1.5">
                         <DollarSign className="w-4 h-4 text-[#0A7C86]" />
@@ -352,7 +352,7 @@ export const CareersPage = () => {
                   </div>
 
                   {/* Rich Text Job Description */}
-                  <div className="font-sans text-xs sm:text-sm text-fazo-gray space-y-4 mb-8">
+                  <div className="font-sans text-xs sm:text-sm text-faazo-gray space-y-4 mb-8">
                     {/* Paragraphs */}
                     {selectedJob.description.paragraphs.map((p, idx) => (
                       <p key={idx} className="leading-relaxed">
@@ -362,7 +362,7 @@ export const CareersPage = () => {
                     
                     {/* Responsibilities */}
                     <div className="pt-2">
-                      <h4 className="font-jakarta font-extrabold text-sm text-fazo-navy uppercase tracking-wide mb-2.5">Key Responsibilities</h4>
+                      <h4 className="font-jakarta font-extrabold text-sm text-faazo-navy uppercase tracking-wide mb-2.5">Key Responsibilities</h4>
                       <ul className="list-disc list-outside pl-4 space-y-1.5">
                         {selectedJob.description.responsibilities.map((item, idx) => (
                           <li key={idx} className="leading-relaxed">{item}</li>
@@ -372,7 +372,7 @@ export const CareersPage = () => {
 
                     {/* Requirements */}
                     <div className="pt-2">
-                      <h4 className="font-jakarta font-extrabold text-sm text-fazo-navy uppercase tracking-wide mb-2.5">Candidate Requirements</h4>
+                      <h4 className="font-jakarta font-extrabold text-sm text-faazo-navy uppercase tracking-wide mb-2.5">Candidate Requirements</h4>
                       <ul className="list-disc list-outside pl-4 space-y-1.5">
                         {selectedJob.description.requirements.map((item, idx) => (
                           <li key={idx} className="leading-relaxed">{item}</li>
@@ -382,33 +382,33 @@ export const CareersPage = () => {
                   </div>
 
                   {/* Application Form */}
-                  <div className="border-t border-fazo-border/50 pt-6">
-                    <h3 className="font-jakarta font-extrabold text-base text-fazo-navy mb-4 tracking-tight">
+                  <div className="border-t border-faazo-border/50 pt-6">
+                    <h3 className="font-jakarta font-extrabold text-base text-faazo-navy mb-4 tracking-tight">
                       Apply for this Position
                     </h3>
                     
                     <form onSubmit={handleFormSubmit} className="flex flex-col gap-4">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                          <label htmlFor="user-name" className="block text-[10px] font-bold text-fazo-navy uppercase mb-1.5">Full Name *</label>
+                          <label htmlFor="user-name" className="block text-[10px] font-bold text-faazo-navy uppercase mb-1.5">Full Name *</label>
                           <input
                             id="user-name"
                             type="text"
                             required
                             placeholder="e.g. Rahul Sharma"
-                            className="w-full px-3.5 py-2.5 rounded-xl border border-fazo-border bg-white focus:outline-none focus:border-[#0A7C86] text-xs text-fazo-navy transition"
+                            className="w-full px-3.5 py-2.5 rounded-xl border border-faazo-border bg-white focus:outline-none focus:border-[#0A7C86] text-xs text-faazo-navy transition"
                             value={form.name}
                             onChange={(e) => setForm({ ...form, name: e.target.value })}
                           />
                         </div>
                         <div>
-                          <label htmlFor="user-email" className="block text-[10px] font-bold text-fazo-navy uppercase mb-1.5">Email Address *</label>
+                          <label htmlFor="user-email" className="block text-[10px] font-bold text-faazo-navy uppercase mb-1.5">Email Address *</label>
                           <input
                             id="user-email"
                             type="email"
                             required
                             placeholder="e.g. rahul.sharma@example.com"
-                            className="w-full px-3.5 py-2.5 rounded-xl border border-fazo-border bg-white focus:outline-none focus:border-[#0A7C86] text-xs text-fazo-navy transition"
+                            className="w-full px-3.5 py-2.5 rounded-xl border border-faazo-border bg-white focus:outline-none focus:border-[#0A7C86] text-xs text-faazo-navy transition"
                             value={form.email}
                             onChange={(e) => setForm({ ...form, email: e.target.value })}
                           />
@@ -417,25 +417,25 @@ export const CareersPage = () => {
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                          <label htmlFor="user-phone" className="block text-[10px] font-bold text-fazo-navy uppercase mb-1.5">Phone Number *</label>
+                          <label htmlFor="user-phone" className="block text-[10px] font-bold text-faazo-navy uppercase mb-1.5">Phone Number *</label>
                           <input
                             id="user-phone"
                             type="tel"
                             required
                             placeholder="Include Area/Country Code"
-                            className="w-full px-3.5 py-2.5 rounded-xl border border-fazo-border bg-white focus:outline-none focus:border-[#0A7C86] text-xs text-fazo-navy transition"
+                            className="w-full px-3.5 py-2.5 rounded-xl border border-faazo-border bg-white focus:outline-none focus:border-[#0A7C86] text-xs text-faazo-navy transition"
                             value={form.phone}
                             onChange={(e) => setForm({ ...form, phone: e.target.value })}
                           />
                         </div>
                         <div>
-                          <label htmlFor="user-loc" className="block text-[10px] font-bold text-fazo-navy uppercase mb-1.5">Current Location *</label>
+                          <label htmlFor="user-loc" className="block text-[10px] font-bold text-faazo-navy uppercase mb-1.5">Current Location *</label>
                           <input
                             id="user-loc"
                             type="text"
                             required
                             placeholder="e.g. Bengaluru, Karnataka"
-                            className="w-full px-3.5 py-2.5 rounded-xl border border-fazo-border bg-white focus:outline-none focus:border-[#0A7C86] text-xs text-fazo-navy transition"
+                            className="w-full px-3.5 py-2.5 rounded-xl border border-faazo-border bg-white focus:outline-none focus:border-[#0A7C86] text-xs text-faazo-navy transition"
                             value={form.location}
                             onChange={(e) => setForm({ ...form, location: e.target.value })}
                           />
@@ -444,7 +444,7 @@ export const CareersPage = () => {
 
                       {/* File Upload Component */}
                       <div>
-                        <span className="block text-[10px] font-bold text-fazo-navy uppercase mb-1.5">Resume / CV * (PDF, DOC, DOCX)</span>
+                        <span className="block text-[10px] font-bold text-faazo-navy uppercase mb-1.5">Resume / CV * (PDF, DOC, DOCX)</span>
                         <div className="relative border-2 border-dashed border-[#E2EAEB] hover:border-[#0A7C86]/50 rounded-2xl p-6 text-center transition-all bg-[#FAFBFD]/50">
                           <input
                             type="file"
@@ -454,21 +454,21 @@ export const CareersPage = () => {
                           />
                           <div className="flex flex-col items-center gap-2">
                             <Upload className="w-7 h-7 text-[#0A7C86]/70" />
-                            <span className="text-xs font-semibold text-fazo-navy">
+                            <span className="text-xs font-semibold text-faazo-navy">
                               {form.resumeName ? form.resumeName : 'Click to upload or drag & drop file (Optional)'}
                             </span>
-                            <span className="text-[10px] text-fazo-gray">PDF, DOC, or DOCX (Max size: 5MB)</span>
+                            <span className="text-[10px] text-faazo-gray">PDF, DOC, or DOCX (Max size: 5MB)</span>
                           </div>
                         </div>
                       </div>
 
                       <div>
-                        <label htmlFor="user-cover" className="block text-[10px] font-bold text-fazo-navy uppercase mb-1.5">Cover Letter / Message</label>
+                        <label htmlFor="user-cover" className="block text-[10px] font-bold text-faazo-navy uppercase mb-1.5">Cover Letter / Message</label>
                         <textarea
                           id="user-cover"
                           rows="4"
-                          placeholder="Briefly state your qualifications and alignment with the FAZO mission..."
-                          className="w-full px-3.5 py-2.5 rounded-xl border border-fazo-border bg-white focus:outline-none focus:border-[#0A7C86] text-xs text-fazo-navy transition resize-none"
+                          placeholder="Briefly state your qualifications and alignment with the FAAZO mission..."
+                          className="w-full px-3.5 py-2.5 rounded-xl border border-faazo-border bg-white focus:outline-none focus:border-[#0A7C86] text-xs text-faazo-navy transition resize-none"
                           value={form.coverLetter}
                           onChange={(e) => setForm({ ...form, coverLetter: e.target.value })}
                         ></textarea>
@@ -480,11 +480,11 @@ export const CareersPage = () => {
                         </div>
                       )}
 
-                      <div className="flex gap-3 border-t border-fazo-border/30 pt-4 mt-2">
+                      <div className="flex gap-3 border-t border-faazo-border/30 pt-4 mt-2">
                         <button
                           type="button"
                           onClick={() => setIsApplyModalOpen(false)}
-                          className="flex-1 py-3 border border-fazo-border rounded-xl text-xs font-bold text-fazo-navy hover:bg-fazo-light transition cursor-pointer"
+                          className="flex-1 py-3 border border-faazo-border rounded-xl text-xs font-bold text-faazo-navy hover:bg-faazo-light transition cursor-pointer"
                         >
                           Cancel
                         </button>
@@ -506,13 +506,13 @@ export const CareersPage = () => {
                   <div className="w-16 h-16 rounded-full bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-500 mb-2">
                     <CheckCircle className="w-8 h-8" />
                   </div>
-                  <h3 className="font-jakarta font-extrabold text-xl text-fazo-navy">Application Submitted!</h3>
-                  <p className="font-sans text-xs sm:text-sm text-fazo-gray leading-relaxed max-w-md">
-                    Thank you, <span className="font-bold text-fazo-navy">{form.name}</span>. Your application for <span className="font-bold text-[#0A7C86]">{selectedJob.title}</span> has been logged. Our recruitment desk will reach out soon.
+                  <h3 className="font-jakarta font-extrabold text-xl text-faazo-navy">Application Submitted!</h3>
+                  <p className="font-sans text-xs sm:text-sm text-faazo-gray leading-relaxed max-w-md">
+                    Thank you, <span className="font-bold text-faazo-navy">{form.name}</span>. Your application for <span className="font-bold text-[#0A7C86]">{selectedJob.title}</span> has been logged. Our recruitment desk will reach out soon.
                   </p>
                   <button
                     onClick={() => setIsApplyModalOpen(false)}
-                    className="mt-4 px-6 py-2.5 bg-fazo-navy hover:bg-[#1A3E4E] text-white rounded-xl text-xs font-bold transition cursor-pointer"
+                    className="mt-4 px-6 py-2.5 bg-faazo-navy hover:bg-[#1A3E4E] text-white rounded-xl text-xs font-bold transition cursor-pointer"
                   >
                     Close Window
                   </button>

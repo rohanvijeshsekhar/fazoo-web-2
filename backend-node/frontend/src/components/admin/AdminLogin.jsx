@@ -38,7 +38,7 @@ export const AdminLogin = () => {
     <div className="admin-login-page">
       <div className="admin-login-card">
         <div className="admin-login-logo">
-          <img src="/hero/fazologo.png" alt="FAZO" />
+          <img src="/hero/faazologo.png" alt="FAAZO" />
           <span className="badge">ADMIN</span>
         </div>
         <h1 className="admin-login-title">Welcome Back</h1>
@@ -97,7 +97,7 @@ export const AdminLogin = () => {
         </form>
 
         <p style={{ textAlign: 'center', marginTop: 24, fontSize: 12, color: 'var(--admin-text-muted)' }}>
-          © {new Date().getFullYear()} FAZO Dental Technology
+          © {new Date().getFullYear()} FAAZO Dental Technology
         </p>
       </div>
     </div>

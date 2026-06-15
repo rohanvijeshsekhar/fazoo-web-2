@@ -110,15 +110,15 @@ const AnimatedStatCard = ({ number, suffix, label, icon: Icon }) => {
         )}
 
         {/* Circular Glass Badge for Icon */}
-        <div className="w-14 h-14 rounded-full flex items-center justify-center bg-fazo-light/50 border border-fazo-border/50 shadow-sm text-[#0A7C86] mb-6 transition-transform duration-300 group-hover:scale-110 backdrop-blur-sm z-10">
+        <div className="w-14 h-14 rounded-full flex items-center justify-center bg-faazo-light/50 border border-faazo-border/50 shadow-sm text-[#0A7C86] mb-6 transition-transform duration-300 group-hover:scale-110 backdrop-blur-sm z-10">
           <Icon className="w-6.5 h-6.5 stroke-[1.5]" />
         </div>
         {/* Number */}
-        <div className="font-jakarta font-extrabold text-[2.75rem] sm:text-[3.25rem] text-fazo-navy leading-none mb-3 tracking-tight selection:bg-[#0A7C86]/10 transition-colors duration-300 group-hover:text-[#0A7C86] z-10">
+        <div className="font-jakarta font-extrabold text-[2.75rem] sm:text-[3.25rem] text-faazo-navy leading-none mb-3 tracking-tight selection:bg-[#0A7C86]/10 transition-colors duration-300 group-hover:text-[#0A7C86] z-10">
           {count}{suffix}
         </div>
         {/* Label */}
-        <div className="text-[11px] sm:text-[12px] font-bold text-fazo-gray tracking-[0.1em] uppercase leading-relaxed max-w-[200px] font-jakarta z-10">
+        <div className="text-[11px] sm:text-[12px] font-bold text-faazo-gray tracking-[0.1em] uppercase leading-relaxed max-w-[200px] font-jakarta z-10">
           {label}
         </div>
       </div>
@@ -194,7 +194,7 @@ const StatsSection = () => {
           <span className="font-sans font-bold text-[12px] tracking-[0.25em] text-[#0A7C86] uppercase mb-4 block">
             Trusted by Dental Professionals
           </span>
-          <h2 className="font-jakarta font-extrabold text-[32px] md:text-[42px] text-fazo-navy tracking-tight max-w-[700px] mx-auto mb-16 md:mb-20">
+          <h2 className="font-jakarta font-extrabold text-[32px] md:text-[42px] text-faazo-navy tracking-tight max-w-[700px] mx-auto mb-16 md:mb-20">
             Numbers That Reflect Our Commitment
           </h2>
         </div>
@@ -204,7 +204,7 @@ const StatsSection = () => {
           {stats.map((stat, index) => (
             <React.Fragment key={index}>
               {index > 0 && (
-                <div className="hidden lg:block w-[1px] bg-fazo-border/60 self-stretch my-8" />
+                <div className="hidden lg:block w-[1px] bg-faazo-border/60 self-stretch my-8" />
               )}
               <div className="flex-1 flex">
                 <AnimatedStatCard
@@ -257,7 +257,7 @@ const JourneySection = () => {
     {
       year: "2025",
       title: "Manufacturing",
-      description: "Established Fazodent Dental Solutions Pvt Ltd and launched FAAZO as a dedicated manufacturing brand.",
+      description: "Established Faazodent Dental Solutions Pvt Ltd and launched FAAZO as a dedicated manufacturing brand.",
       image: "/hero/about/timeline/im5.png"
     },
     {
@@ -343,7 +343,7 @@ const JourneySection = () => {
   return (
     <section
       ref={containerRef}
-      className="relative bg-white pt-24 md:pt-32 pb-16 md:pb-20 flex flex-col lg:flex-row items-start border-t border-fazo-border/50"
+      className="relative bg-white pt-24 md:pt-32 pb-16 md:pb-20 flex flex-col lg:flex-row items-start border-t border-faazo-border/50"
     >
       {/* Left side: Sticky visual area (45%) */}
       <div className="w-full lg:w-[45%] flex flex-col items-stretch lg:sticky lg:top-28 lg:h-[calc(100vh_-_180px)] z-20 mb-4 lg:mb-0 px-6 lg:pl-16 lg:pr-8">
@@ -351,7 +351,7 @@ const JourneySection = () => {
           <span className="font-jakarta font-bold text-[12px] tracking-[0.25em] text-[#0A7C86] uppercase mb-3 block">
             OUR JOURNEY
           </span>
-          <h2 className="font-jakarta font-extrabold text-[28px] sm:text-[36px] lg:text-[40px] text-fazo-navy leading-tight tracking-tight">
+          <h2 className="font-jakarta font-extrabold text-[28px] sm:text-[36px] lg:text-[40px] text-faazo-navy leading-tight tracking-tight">
             A Decade Of Growth, <br className="hidden lg:block" />Innovation & Trust
           </h2>
         </div>
@@ -384,7 +384,7 @@ const JourneySection = () => {
           style={{ top: `${lineStyle.top}px`, bottom: `${lineStyle.bottom}px` }}
         >
           {/* Base light gray line */}
-          <div className="absolute inset-0 bg-fazo-border/60 rounded-full" />
+          <div className="absolute inset-0 bg-faazo-border/60 rounded-full" />
 
           {/* Progress fill line (Teal) */}
           <div
@@ -427,7 +427,7 @@ const JourneySection = () => {
 
                   {/* Year Label next to the marker (desktop only) */}
                   <span
-                    className={`absolute left-8 font-jakarta font-bold text-xs transition-colors duration-500 whitespace-nowrap hidden xl:block ${isActive ? 'text-[#0A7C86]' : 'text-fazo-navy/35'
+                    className={`absolute left-8 font-jakarta font-bold text-xs transition-colors duration-500 whitespace-nowrap hidden xl:block ${isActive ? 'text-[#0A7C86]' : 'text-faazo-navy/35'
                       }`}
                   >
                     {milestone.year}
@@ -440,18 +440,18 @@ const JourneySection = () => {
 
                 {/* Year display */}
                 <div
-                  className={`font-jakarta font-extrabold text-[80px] sm:text-[96px] lg:text-[104px] xl:text-[110px] leading-none mb-4 select-none transition-colors duration-[800ms] ${isActive ? 'text-[#0A7C86]' : 'text-fazo-navy/10'}`}
+                  className={`font-jakarta font-extrabold text-[80px] sm:text-[96px] lg:text-[104px] xl:text-[110px] leading-none mb-4 select-none transition-colors duration-[800ms] ${isActive ? 'text-[#0A7C86]' : 'text-faazo-navy/10'}`}
                 >
                   {milestone.year}
                 </div>
 
                 {/* Title */}
-                <h4 className="font-jakarta font-extrabold text-[24px] sm:text-[30px] text-fazo-navy mb-4 tracking-tight">
+                <h4 className="font-jakarta font-extrabold text-[24px] sm:text-[30px] text-faazo-navy mb-4 tracking-tight">
                   {milestone.title}
                 </h4>
 
                 {/* Description */}
-                <p className="font-sans text-[15px] sm:text-[16px] leading-[1.7] text-fazo-gray max-w-[540px] mb-8 lg:mb-0">
+                <p className="font-sans text-[15px] sm:text-[16px] leading-[1.7] text-faazo-gray max-w-[540px] mb-8 lg:mb-0">
                   {milestone.description}
                 </p>
 
@@ -496,14 +496,14 @@ const MissionVisionSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-white pt-16 md:pt-20 pb-28 md:pb-36 border-t border-fazo-border/40 overflow-hidden">
+    <section ref={sectionRef} className="bg-white pt-16 md:pt-20 pb-28 md:pb-36 border-t border-faazo-border/40 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Section Heading */}
         <div className="flex flex-col items-center text-center mb-16 lg:mb-20">
           <span className="animate-card-content font-jakarta font-bold text-[12px] tracking-[0.3em] text-[#0A7C86] uppercase mb-4 block">
             OUR PURPOSE
           </span>
-          <h2 className="animate-card-content font-jakarta font-extrabold text-[32px] sm:text-[42px] lg:text-[48px] text-fazo-navy leading-tight tracking-tight max-w-[900px]">
+          <h2 className="animate-card-content font-jakarta font-extrabold text-[32px] sm:text-[42px] lg:text-[48px] text-faazo-navy leading-tight tracking-tight max-w-[900px]">
             Driven By Mission, Defined By <span className="text-[#0A7C86]">Vision</span>
           </h2>
           <div className="animate-card-content w-12 h-[3px] bg-[#0A7C86] mt-8 rounded-full opacity-60"></div>
@@ -540,12 +540,12 @@ const MissionVisionSection = () => {
                 01 — OUR MISSION
               </span>
               
-              <h3 className="animate-card-content font-jakarta font-extrabold text-[32px] sm:text-[38px] lg:text-[44px] text-fazo-navy leading-[1.1] mb-6 tracking-tight">
+              <h3 className="animate-card-content font-jakarta font-extrabold text-[32px] sm:text-[38px] lg:text-[44px] text-faazo-navy leading-[1.1] mb-6 tracking-tight">
                 Empowering <br />
                 <span className="text-[#0A7C86] drop-shadow-sm">Dental Excellence</span>
               </h3>
               
-              <p className="animate-card-content font-sans text-[15px] sm:text-[16px] leading-[1.8] text-fazo-gray max-w-[520px] opacity-90">
+              <p className="animate-card-content font-sans text-[15px] sm:text-[16px] leading-[1.8] text-faazo-gray max-w-[520px] opacity-90">
                 At FAAZO, our mission is to empower dental professionals with innovative technologies, precision-engineered equipment, and dependable support solutions. We are committed to enhancing clinical efficiency, improving patient outcomes, and helping practices grow through reliable products, technical expertise, and long-term partnerships built on trust.
               </p>
             </div>
@@ -580,12 +580,12 @@ const MissionVisionSection = () => {
                 02 — OUR VISION
               </span>
               
-              <h3 className="animate-card-content font-jakarta font-extrabold text-[32px] sm:text-[38px] lg:text-[44px] text-fazo-navy leading-[1.1] mb-6 tracking-tight">
+              <h3 className="animate-card-content font-jakarta font-extrabold text-[32px] sm:text-[38px] lg:text-[44px] text-faazo-navy leading-[1.1] mb-6 tracking-tight">
                 Building The Future <br />
                 <span className="text-[#0A7C86] drop-shadow-sm">Of Dental Technology</span>
               </h3>
               
-              <p className="animate-card-content font-sans text-[15px] sm:text-[16px] leading-[1.8] text-fazo-gray max-w-[520px] opacity-90">
+              <p className="animate-card-content font-sans text-[15px] sm:text-[16px] leading-[1.8] text-faazo-gray max-w-[520px] opacity-90">
                 Our vision is to become a globally recognized dental technology brand that drives innovation, manufacturing excellence, and sustainable growth. By continuously advancing our products and expanding our global presence, we aim to shape the future of modern dentistry and make world-class dental solutions accessible to professionals everywhere.
               </p>
             </div>
@@ -642,17 +642,17 @@ const CoreValuesSection = () => {
   ];
 
   return (
-    <section className="bg-slate-50/40 py-24 md:py-32 border-t border-fazo-border/40 overflow-hidden">
+    <section className="bg-slate-50/40 py-24 md:py-32 border-t border-faazo-border/40 overflow-hidden">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-16 md:mb-20">
           <span className="font-jakarta font-bold text-[12px] tracking-[0.3em] text-[#0A7C86] uppercase mb-4 block">
             WHAT WE STAND FOR
           </span>
-          <h2 className="font-jakarta font-extrabold text-[32px] sm:text-[42px] text-fazo-navy leading-tight tracking-tight">
+          <h2 className="font-jakarta font-extrabold text-[32px] sm:text-[42px] text-faazo-navy leading-tight tracking-tight">
             Core Values
           </h2>
-          <p className="font-sans text-[15px] sm:text-[16px] leading-[1.6] text-fazo-gray max-w-[600px] mt-4">
+          <p className="font-sans text-[15px] sm:text-[16px] leading-[1.6] text-faazo-gray max-w-[600px] mt-4">
             The principles that guide every product, partnership, and innovation.
           </p>
           <div className="w-12 h-[3px] bg-[#0A7C86] mt-6 rounded-full opacity-60"></div>
@@ -674,10 +674,10 @@ const CoreValuesSection = () => {
                   <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-[#0A7C86]/10 text-[#0A7C86] mb-6 transition-colors duration-300 group-hover:bg-[#0A7C86] group-hover:text-white">
                     <Icon className="w-5 h-5 stroke-[1.5]" />
                   </div>
-                  <h3 className="font-jakarta font-bold text-[18px] text-fazo-navy mb-3">
+                  <h3 className="font-jakarta font-bold text-[18px] text-faazo-navy mb-3">
                     {item.title}
                   </h3>
-                  <p className="font-sans text-[14px] leading-[1.6] text-fazo-gray">
+                  <p className="font-sans text-[14px] leading-[1.6] text-faazo-gray">
                     {item.description}
                   </p>
                 </div>
@@ -703,22 +703,22 @@ export const AboutPage = () => {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-16 md:py-24 w-full z-10 flex flex-col items-center text-center">
           {/* Badge */}
           <div className="flex items-center gap-2 mb-6">
-            <span className="w-2.5 h-2.5 rounded-full bg-fazo-teal"></span>
-            <span className="font-jakarta font-bold text-[12px] tracking-[0.2em] text-fazo-teal uppercase">About Faazo</span>
+            <span className="w-2.5 h-2.5 rounded-full bg-faazo-teal"></span>
+            <span className="font-jakarta font-bold text-[12px] tracking-[0.2em] text-faazo-teal uppercase">About Faazo</span>
           </div>
 
           {/* Title */}
-          <h2 className="font-jakarta font-extrabold text-[38px] md:text-[52px] lg:text-[46px] xl:text-[56px] leading-[1.12] text-fazo-navy mb-6 tracking-tight max-w-[800px]">
+          <h2 className="font-jakarta font-extrabold text-[38px] md:text-[52px] lg:text-[46px] xl:text-[56px] leading-[1.12] text-faazo-navy mb-6 tracking-tight max-w-[800px]">
             Engineering Trust <br />
-            For <span className="text-fazo-teal">Modern Dentistry</span>
+            For <span className="text-faazo-teal">Modern Dentistry</span>
           </h2>
 
           {/* Short Underline Divider */}
-          <div className="w-12 h-[3px] bg-fazo-teal mb-8"></div>
+          <div className="w-12 h-[3px] bg-faazo-teal mb-8"></div>
 
           {/* Description */}
-          <p className="font-sans text-[15px] md:text-[16px] leading-[1.7] text-fazo-gray mb-12 max-w-[680px]">
-            For more than 11 years, Fazodent Dental Solutions has empowered dental professionals through innovative technologies, precision-engineered equipment, and dependable service.
+          <p className="font-sans text-[15px] md:text-[16px] leading-[1.7] text-faazo-gray mb-12 max-w-[680px]">
+            For more than 11 years, Faazodent Dental Solutions has empowered dental professionals through innovative technologies, precision-engineered equipment, and dependable service.
           </p>
 
 

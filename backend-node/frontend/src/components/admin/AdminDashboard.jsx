@@ -38,7 +38,7 @@ export const AdminDashboard = () => {
       <div className="admin-page-header">
         <div>
           <h1 className="admin-page-title">Dashboard</h1>
-          <p className="admin-page-subtitle">Welcome back. Here's an overview of your FAZO platform.</p>
+          <p className="admin-page-subtitle">Welcome back. Here's an overview of your FAAZO platform.</p>
         </div>
       </div>
 

@@ -63,7 +63,7 @@ app.use('/api/dashboard', require('./routes/dashboard'));
 
 // ─── Health Check ───
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', server: 'fazo-backend-node', timestamp: new Date().toISOString() });
+  res.json({ status: 'ok', server: 'faazo-backend-node', timestamp: new Date().toISOString() });
 });
 
 // ─── 404 Handler ───
@@ -85,7 +85,7 @@ app.get('*', (req, res) => {
 
 // ─── Start Server ───
 app.listen(PORT, () => {
-  console.log(`\n  FAZO Backend (Node.js) running at: http://localhost:${PORT}/`);
+  console.log(`\n  FAAZO Backend (Node.js) running at: http://localhost:${PORT}/`);
   console.log(`  API Base: http://localhost:${PORT}/api/`);
   console.log(`  Media:    http://localhost:${PORT}/media/\n`);
 });

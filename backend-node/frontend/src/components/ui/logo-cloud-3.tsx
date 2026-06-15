@@ -37,9 +37,9 @@ export function LogoCloud({ className, logos, items, ...props }: LogoCloudProps)
         {items && items.map((item, idx) => (
           <div
             key={`item-${idx}`}
-            className="font-jakarta font-semibold text-[14px] sm:text-[15px] text-fazo-navy/85 hover:text-fazo-teal transition-all duration-300 cursor-default select-none px-4 py-2 rounded-xl bg-white/40 border border-white/50 backdrop-blur-md shadow-[0_2px_10px_rgba(0,111,122,0.03)] flex items-center gap-2 w-max"
+            className="font-jakarta font-semibold text-[14px] sm:text-[15px] text-faazo-navy/85 hover:text-faazo-teal transition-all duration-300 cursor-default select-none px-4 py-2 rounded-xl bg-white/40 border border-white/50 backdrop-blur-md shadow-[0_2px_10px_rgba(0,111,122,0.03)] flex items-center gap-2 w-max"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-fazo-teal/75 pulse-glow" />
+            <span className="w-1.5 h-1.5 rounded-full bg-faazo-teal/75 pulse-glow" />
             {item}
           </div>
         ))}

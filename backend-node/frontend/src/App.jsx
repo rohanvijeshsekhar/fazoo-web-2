@@ -9,6 +9,8 @@ import { DealerNetworkPage } from './components/DealerNetworkPage';
 import { CareersPage } from './components/CareersPage';
 import { ContactPage } from './components/ContactPage';
 import { AboutPage } from './components/AboutPage';
+import { PrivacyPolicyPage } from './components/PrivacyPolicyPage';
+import { TermsConditionsPage } from './components/TermsConditionsPage';
 import { AdminLayout } from './components/admin/AdminLayout';
 import { AdminLogin } from './components/admin/AdminLogin';
 import { AdminDashboard } from './components/admin/AdminDashboard';
@@ -20,6 +22,7 @@ import { AdminDealers } from './components/admin/AdminDealers';
 import { AdminCareers } from './components/admin/AdminCareers';
 import { AdminApplications } from './components/admin/AdminApplications';
 import { AdminEnquiries } from './components/admin/AdminEnquiries';
+import { ComingSoonPage } from './components/ComingSoonPage';
 import { getCategories, getStats, getTestimonials, getImageUrl } from './lib/db';
 import { CtaCard } from "@/components/ui/cta-card";
 import { Globe as CobeGlobe } from "./components/ui/cobe-globe";
@@ -63,7 +66,7 @@ import {
 
 const Logo = () => (
   <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center group">
-    <img src="/hero/fazologo.png" alt="FAZO" className="h-8 w-auto object-contain" />
+    <img src="/hero/faazologo.png" alt="FAAZO" className="h-8 w-auto object-contain" />
   </Link>
 );
 
@@ -132,7 +135,7 @@ const Navbar = () => {
             onClick={() => handleNavClick(null)}
             className={`relative font-jakarta font-semibold text-[15px] transition-colors duration-200 ${activeTab === 'Home'
               ? 'text-[#0A7C86] nav-link-active'
-              : 'text-fazo-navy hover:text-[#0A7C86]'
+              : 'text-faazo-navy hover:text-[#0A7C86]'
               }`}
           >
             Home
@@ -141,7 +144,7 @@ const Navbar = () => {
             to="/about"
             className={`relative font-jakarta font-semibold text-[15px] transition-colors duration-200 ${activeTab === 'About'
                 ? 'text-[#0A7C86] nav-link-active'
-                : 'text-fazo-navy hover:text-[#0A7C86]'
+                : 'text-faazo-navy hover:text-[#0A7C86]'
               }`}
           >
             About
@@ -158,7 +161,7 @@ const Navbar = () => {
               onClick={() => setActiveDropdown(null)}
               className={`flex items-center gap-1 font-jakarta font-semibold text-[15px] transition-colors duration-200 ${activeTab === 'Products' || activeDropdown === 'products'
                 ? 'text-[#0A7C86]'
-                : 'text-fazo-navy hover:text-[#0A7C86]'
+                : 'text-faazo-navy hover:text-[#0A7C86]'
                 }`}
             >
               Products <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'products' ? 'rotate-180' : ''}`} />
@@ -178,7 +181,7 @@ const Navbar = () => {
                       key={idx}
                       to={`/products/${cat.slug}`}
                       onClick={() => setActiveDropdown(null)}
-                      className="px-3 py-2.5 rounded-lg text-[14px] font-semibold text-fazo-navy hover:text-[#0A7C86] hover:bg-[#0A7C86]/5 transition-all duration-200 text-left"
+                      className="px-3 py-2.5 rounded-lg text-[14px] font-semibold text-faazo-navy hover:text-[#0A7C86] hover:bg-[#0A7C86]/5 transition-all duration-200 text-left"
                     >
                       {cat.name}
                     </Link>
@@ -197,7 +200,7 @@ const Navbar = () => {
             <button
               className={`flex items-center gap-1 font-jakarta font-semibold text-[15px] transition-colors duration-200 ${activeDropdown === 'explore'
                 ? 'text-[#0A7C86]'
-                : 'text-fazo-navy hover:text-[#0A7C86]'
+                : 'text-faazo-navy hover:text-[#0A7C86]'
                 }`}
             >
               Explore <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${activeDropdown === 'explore' ? 'rotate-180' : ''}`} />
@@ -215,14 +218,14 @@ const Navbar = () => {
                   <Link
                     to="/dealer-network"
                     onClick={() => setActiveDropdown(null)}
-                    className="px-3 py-2 rounded-lg text-[14px] font-semibold text-fazo-navy hover:text-[#0A7C86] hover:bg-[#0A7C86]/5 transition-all duration-200 text-left w-full block"
+                    className="px-3 py-2 rounded-lg text-[14px] font-semibold text-faazo-navy hover:text-[#0A7C86] hover:bg-[#0A7C86]/5 transition-all duration-200 text-left w-full block"
                   >
                     Dealer Network
                   </Link>
                   <Link
                     to="/careers"
                     onClick={() => setActiveDropdown(null)}
-                    className="px-3 py-2 rounded-lg text-[14px] font-semibold text-fazo-navy hover:text-[#0A7C86] hover:bg-[#0A7C86]/5 transition-all duration-200 text-left w-full block"
+                    className="px-3 py-2 rounded-lg text-[14px] font-semibold text-faazo-navy hover:text-[#0A7C86] hover:bg-[#0A7C86]/5 transition-all duration-200 text-left w-full block"
                   >
                     Careers
                   </Link>
@@ -235,7 +238,7 @@ const Navbar = () => {
             to="/contact"
             className={`relative font-jakarta font-semibold text-[15px] transition-colors duration-200 ${activeTab === 'Contact'
               ? 'text-[#0A7C86] nav-link-active'
-              : 'text-fazo-navy hover:text-[#0A7C86]'
+              : 'text-faazo-navy hover:text-[#0A7C86]'
               }`}
           >
             Contact
@@ -243,7 +246,7 @@ const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-4">
-          <button className="p-2.5 rounded-full text-fazo-navy hover:bg-white/40 hover:text-[#0A7C86] border border-transparent hover:border-white/35 transition-all duration-200">
+          <button className="p-2.5 rounded-full text-faazo-navy hover:bg-white/40 hover:text-[#0A7C86] border border-transparent hover:border-white/35 transition-all duration-200">
             <Search className="w-5 h-5" />
           </button>
           <a
@@ -253,7 +256,7 @@ const Navbar = () => {
             Get in Touch <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
           <button
-            className="md:hidden p-2 rounded-lg text-fazo-navy hover:bg-white/40 border border-transparent hover:border-white/30 transition-colors"
+            className="md:hidden p-2 rounded-lg text-faazo-navy hover:bg-white/40 border border-transparent hover:border-white/30 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -286,7 +289,7 @@ const Navbar = () => {
             >
               {/* Panel Header */}
               <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
-                <img src="/hero/fazologo.png" alt="FAZO" className="h-7 w-auto object-contain" />
+                <img src="/hero/faazologo.png" alt="FAAZO" className="h-7 w-auto object-contain" />
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:bg-gray-200 transition-colors"
@@ -440,7 +443,7 @@ const Navbar = () => {
                     <Phone className="w-3 h-3" /> Call Us
                   </a>
                   <span>•</span>
-                  <a href="mailto:info@fazo.in" className="flex items-center gap-1 hover:text-[#0A7C86] transition-colors">
+                  <a href="mailto:info@faazo.in" className="flex items-center gap-1 hover:text-[#0A7C86] transition-colors">
                     <Mail className="w-3 h-3" /> Email
                   </a>
                 </div>
@@ -501,13 +504,13 @@ const AnimatedStat = ({ value, label, icon: IconComponent }) => {
 
   return (
     <div ref={elementRef} className="glass-card glass-interactive rounded-xl sm:rounded-2xl p-2 sm:p-5 flex flex-col items-center text-center group border border-white/50 hover:bg-white/50 hover:-translate-y-1 transition-all duration-300 shadow-sm">
-      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-white/50 flex items-center justify-center text-fazo-teal mb-2 sm:mb-3 shadow-inner border border-white/50 transition-transform duration-300 group-hover:scale-110">
+      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-white/50 flex items-center justify-center text-faazo-teal mb-2 sm:mb-3 shadow-inner border border-white/50 transition-transform duration-300 group-hover:scale-110">
         <IconComponent className="w-4 h-4 sm:w-5 h-5" />
       </div>
-      <span className="font-jakarta font-extrabold text-sm sm:text-2xl text-fazo-navy tracking-tight group-hover:text-fazo-teal transition-colors duration-300">
+      <span className="font-jakarta font-extrabold text-sm sm:text-2xl text-faazo-navy tracking-tight group-hover:text-faazo-teal transition-colors duration-300">
         {count}{suffix}
       </span>
-      <span className="text-[9px] sm:text-xs text-fazo-gray font-semibold mt-1 leading-tight">{label}</span>
+      <span className="text-[9px] sm:text-xs text-faazo-gray font-semibold mt-1 leading-tight">{label}</span>
     </div>
   );
 };
@@ -547,41 +550,41 @@ const Hero = () => {
           {/* Left Column (Content) */}
           <div className="order-2 lg:order-1 lg:col-span-5 flex flex-col items-start z-10 pl-6 lg:pl-[calc(max(3rem,calc((100vw-1400px)/2+3rem)))] pr-8 pt-12 lg:pt-0 lg:-mt-14 w-full">
             <div className="mb-4 text-left w-full pl-[2.5px]">
-              <span className="font-sans font-bold text-[13px] tracking-[0.15em] text-fazo-teal">Precision • Innovation • Excellence</span>
+              <span className="font-sans font-bold text-[13px] tracking-[0.15em] text-faazo-teal">Precision • Innovation • Excellence</span>
             </div>
 
-            <h1 className="font-jakarta font-extrabold text-[40px] sm:text-[44px] md:text-[56px] lg:text-[46px] xl:text-[54px] leading-[1.12] text-fazo-navy mb-6 tracking-tight">
-              Advanced Dental Technology for <span className="text-fazo-teal">Better Outcomes</span>
+            <h1 className="font-jakarta font-extrabold text-[40px] sm:text-[44px] md:text-[56px] lg:text-[46px] xl:text-[54px] leading-[1.12] text-faazo-navy mb-6 tracking-tight">
+              Advanced Dental Technology for <span className="text-faazo-teal">Better Outcomes</span>
             </h1>
 
-            <p className="font-sans text-[15px] md:text-[16px] leading-[1.65] text-fazo-gray mb-8 max-w-[500px]">
+            <p className="font-sans text-[15px] md:text-[16px] leading-[1.65] text-faazo-gray mb-8 max-w-[500px]">
               Empowering dental professionals with innovative solutions and reliable technologies for modern clinical excellence.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-10 w-full sm:w-auto">
-              <Link to="/contact" className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#004d54] to-fazo-teal text-white px-7 py-4 rounded-lg font-jakarta font-bold text-[15px] shadow-[0_10px_30px_rgba(0,111,122,0.18)] hover:shadow-[0_15px_35px_rgba(0,111,122,0.28)] hover:-translate-y-0.5 border border-white/10 transition-all duration-300 group w-full sm:w-auto">
+              <Link to="/contact" className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#004d54] to-faazo-teal text-white px-7 py-4 rounded-lg font-jakarta font-bold text-[15px] shadow-[0_10px_30px_rgba(0,111,122,0.18)] hover:shadow-[0_15px_35px_rgba(0,111,122,0.28)] hover:-translate-y-0.5 border border-white/10 transition-all duration-300 group w-full sm:w-auto">
                 Explore Solutions <ArrowRight className="w-4.5 h-4.5 group-hover:translate-x-1 transition-transform" />
               </Link>
 
 
             </div>
 
-            <div className="grid grid-cols-2 sm:flex sm:items-center sm:flex-wrap gap-x-8 gap-y-4 pt-6 border-t border-fazo-border/60 w-full">
+            <div className="grid grid-cols-2 sm:flex sm:items-center sm:flex-wrap gap-x-8 gap-y-4 pt-6 border-t border-faazo-border/60 w-full">
               <div className="flex items-center gap-2.5">
-                <ShieldCheck className="w-5 h-5 text-fazo-teal" />
-                <span className="font-jakarta font-semibold text-[13px] text-fazo-navy leading-tight">Trusted<br /><span className="text-fazo-gray font-medium">Quality</span></span>
+                <ShieldCheck className="w-5 h-5 text-faazo-teal" />
+                <span className="font-jakarta font-semibold text-[13px] text-faazo-navy leading-tight">Trusted<br /><span className="text-faazo-gray font-medium">Quality</span></span>
               </div>
               <div className="flex items-center gap-2.5">
-                <Headphones className="w-5 h-5 text-fazo-teal" />
-                <span className="font-jakarta font-semibold text-[13px] text-fazo-navy leading-tight">Expert<br /><span className="text-fazo-gray font-medium">Support</span></span>
+                <Headphones className="w-5 h-5 text-faazo-teal" />
+                <span className="font-jakarta font-semibold text-[13px] text-faazo-navy leading-tight">Expert<br /><span className="text-faazo-gray font-medium">Support</span></span>
               </div>
               <div className="flex items-center gap-2.5">
-                <Cpu className="w-5 h-5 text-fazo-teal" />
-                <span className="font-jakarta font-semibold text-[13px] text-fazo-navy leading-tight">Innovative<br /><span className="text-fazo-gray font-medium">Technology</span></span>
+                <Cpu className="w-5 h-5 text-faazo-teal" />
+                <span className="font-jakarta font-semibold text-[13px] text-faazo-navy leading-tight">Innovative<br /><span className="text-faazo-gray font-medium">Technology</span></span>
               </div>
               <div className="flex items-center gap-2.5">
-                <Award className="w-5 h-5 text-fazo-teal" />
-                <span className="font-jakarta font-semibold text-[13px] text-fazo-navy leading-tight">Global<br /><span className="text-fazo-gray font-medium">Presence</span></span>
+                <Award className="w-5 h-5 text-faazo-teal" />
+                <span className="font-jakarta font-semibold text-[13px] text-faazo-navy leading-tight">Global<br /><span className="text-faazo-gray font-medium">Presence</span></span>
               </div>
             </div>
           </div>
@@ -637,18 +640,18 @@ const ProductShowcase = () => {
   return (
     <section className="py-24 bg-gradient-to-b from-[#F4F9FA] to-white relative overflow-hidden">
       {/* Background Soft Blobs */}
-      <div className="absolute top-[20%] left-[-10%] w-[350px] h-[350px] rounded-full bg-fazo-cyan/10 blur-[100px] pointer-events-none z-0"></div>
-      <div className="absolute bottom-[20%] right-[-10%] w-[350px] h-[350px] rounded-full bg-fazo-teal/10 blur-[100px] pointer-events-none z-0"></div>
+      <div className="absolute top-[20%] left-[-10%] w-[350px] h-[350px] rounded-full bg-faazo-cyan/10 blur-[100px] pointer-events-none z-0"></div>
+      <div className="absolute bottom-[20%] right-[-10%] w-[350px] h-[350px] rounded-full bg-faazo-teal/10 blur-[100px] pointer-events-none z-0"></div>
 
       <div className="max-w-[1300px] mx-auto px-6 lg:px-8 mb-16 text-center relative z-10">
         <span className="font-sans font-bold text-[13px] tracking-[0.18em] text-[#0A7C86] uppercase mb-3 block">
           Featured Product Categories
         </span>
-        <h2 className="font-jakarta font-extrabold text-3xl sm:text-4xl lg:text-[40px] leading-tight text-fazo-navy mb-4 tracking-tight">
+        <h2 className="font-jakarta font-extrabold text-3xl sm:text-4xl lg:text-[40px] leading-tight text-faazo-navy mb-4 tracking-tight">
           Solutions for Every Dental Practice
         </h2>
-        <p className="font-sans text-[15px] sm:text-base text-fazo-gray max-w-[680px] mx-auto leading-relaxed">
-          Explore FAZO's comprehensive portfolio of advanced dental technologies designed to support modern clinical excellence.
+        <p className="font-sans text-[15px] sm:text-base text-faazo-gray max-w-[680px] mx-auto leading-relaxed">
+          Explore FAAZO's comprehensive portfolio of advanced dental technologies designed to support modern clinical excellence.
         </p>
       </div>
 
@@ -688,10 +691,10 @@ const ProductShowcase = () => {
                   {/* Card Info */}
                   <div className="pt-4 px-5 pb-5 flex flex-col flex-grow justify-between bg-gradient-to-b from-[#E6F3F5]/70 via-white/80 to-[#EAF2F4]/70 border-t border-white/30 text-left">
                     <div>
-                      <h3 className="font-jakarta font-bold text-base sm:text-lg text-fazo-navy mb-1.5 leading-snug group-hover:text-[#0A7C86] transition-colors duration-300">
+                      <h3 className="font-jakarta font-bold text-base sm:text-lg text-faazo-navy mb-1.5 leading-snug group-hover:text-[#0A7C86] transition-colors duration-300">
                         {item.name}
                       </h3>
-                      <p className="font-sans text-xs sm:text-sm text-fazo-gray leading-relaxed mb-3 line-clamp-2">
+                      <p className="font-sans text-xs sm:text-sm text-faazo-gray leading-relaxed mb-3 line-clamp-2">
                         {item.description}
                       </p>
                     </div>
@@ -798,8 +801,8 @@ const Testimonials = () => {
   return (
     <section className="bg-transparent py-20 relative overflow-hidden">
       {/* Background Soft Glow Blobs */}
-      <div className="absolute top-[20%] right-[-10%] w-[400px] h-[400px] rounded-full bg-fazo-cyan/10 blur-[110px] pointer-events-none z-0 animate-pulse"></div>
-      <div className="absolute bottom-[20%] left-[-10%] w-[350px] h-[350px] rounded-full bg-fazo-teal/10 blur-[100px] pointer-events-none z-0"></div>
+      <div className="absolute top-[20%] right-[-10%] w-[400px] h-[400px] rounded-full bg-faazo-cyan/10 blur-[110px] pointer-events-none z-0 animate-pulse"></div>
+      <div className="absolute bottom-[20%] left-[-10%] w-[350px] h-[350px] rounded-full bg-faazo-teal/10 blur-[100px] pointer-events-none z-0"></div>
 
       {/* Center Highlight Light Effect */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[450px] rounded-full bg-gradient-to-tr from-[#2EA5B0]/20 via-[#0A7C86]/15 to-transparent blur-[125px] pointer-events-none z-0 animate-pulse" style={{ animationDuration: '8s' }}></div>
@@ -812,10 +815,10 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="flex flex-col items-center justify-center max-w-[580px] mx-auto text-center mb-16"
         >
-          <h2 className="font-jakarta font-extrabold text-3xl sm:text-4xl lg:text-[40px] leading-tight text-fazo-navy tracking-tight mt-0">
+          <h2 className="font-jakarta font-extrabold text-3xl sm:text-4xl lg:text-[40px] leading-tight text-faazo-navy tracking-tight mt-0">
             What Our Partners Say
           </h2>
-          <p className="font-sans text-[15px] sm:text-base text-fazo-gray mt-4 max-w-[480px]">
+          <p className="font-sans text-[15px] sm:text-base text-faazo-gray mt-4 max-w-[480px]">
             See what leading clinicians, distributors, and healthcare facilities have to say about FAAZO's modern dental tech ecosystem.
           </p>
         </motion.div>
@@ -834,22 +837,22 @@ const Contact = () => {
   return (
     <section className="bg-transparent py-20 relative overflow-hidden">
       {/* Background Soft Glow Blobs */}
-      <div className="absolute top-[40%] left-[20%] w-[350px] h-[350px] rounded-full bg-fazo-cyan/5 blur-[100px] pointer-events-none z-0"></div>
-      <div className="absolute bottom-[20%] right-[-5%] w-[350px] h-[350px] rounded-full bg-fazo-teal/5 blur-[100px] pointer-events-none z-0"></div>
+      <div className="absolute top-[40%] left-[20%] w-[350px] h-[350px] rounded-full bg-faazo-cyan/5 blur-[100px] pointer-events-none z-0"></div>
+      <div className="absolute bottom-[20%] right-[-5%] w-[350px] h-[350px] rounded-full bg-faazo-teal/5 blur-[100px] pointer-events-none z-0"></div>
 
       <div className="max-w-[1100px] mx-auto px-6 sm:px-8 relative z-10">
         <CtaCard
           title="GET IN TOUCH"
           subtitle={
             <>
-              Partner with <span className="text-fazo-teal">FAAZO</span> Today
+              Partner with <span className="text-faazo-teal">FAAZO</span> Today
             </>
           }
           description="Have questions about our modern dental technologies, customized clinical integrations, or looking to partner with FAAZO? Speak with our expert support and clinical relations teams to elevate your practice."
           buttonText="Contact Our Team"
           imageSrc="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200&auto=format&fit=crop"
           imageAlt="Modern friendly FAAZO dental clinical support staff"
-          onButtonClick={() => console.log("Opening contact options...")}
+          onButtonClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=info@faazo.in", "_blank")}
         />
       </div>
     </section>
@@ -860,12 +863,23 @@ const BrandExperience = () => {
   const containerRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const isTransitioning = useRef(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
     const handleWheel = (e) => {
+      if (window.innerWidth <= 768) return;
       const rect = container.getBoundingClientRect();
       const isAligned = rect.top >= -12 && rect.top <= 12;
       const delta = e.deltaY;
@@ -930,6 +944,7 @@ const BrandExperience = () => {
     };
 
     const handleTouchMove = (e) => {
+      if (window.innerWidth <= 768) return;
       const rect = container.getBoundingClientRect();
       const isAligned = rect.top >= -15 && rect.top <= 15;
 
@@ -977,10 +992,44 @@ const BrandExperience = () => {
     };
   }, [activeIndex]);
 
+  // Mobile-only native scroll-driven transition
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerWidth > 768) return;
+      if (isTransitioning.current) return;
+
+      const container = containerRef.current;
+      if (!container) return;
+
+      const rect = container.getBoundingClientRect();
+      const totalHeight = rect.height - window.innerHeight;
+      if (totalHeight <= 0) return;
+
+      const progress = Math.max(0, Math.min(1, -rect.top / totalHeight));
+
+      let index = 0;
+      if (progress < 0.25) {
+        index = 0;
+      } else if (progress < 0.5) {
+        index = 1;
+      } else if (progress < 0.75) {
+        index = 2;
+      } else {
+        index = 3;
+      }
+
+      setActiveIndex(index);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   // Snap to top when the section takes up significant viewport area
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
+        if (window.innerWidth <= 768) return;
         if (entry.isIntersecting && !isTransitioning.current) {
           const rect = entry.target.getBoundingClientRect();
           if (rect.top > 0 && rect.top < window.innerHeight * 0.3) {
@@ -1000,6 +1049,17 @@ const BrandExperience = () => {
     if (isTransitioning.current) return;
     isTransitioning.current = true;
     setActiveIndex(idx);
+
+    if (window.innerWidth <= 768 && containerRef.current) {
+      const container = containerRef.current;
+      const rect = container.getBoundingClientRect();
+      const scrollTop = window.scrollY + rect.top;
+      const totalHeight = rect.height - window.innerHeight;
+      const progress = 0.125 + (idx * 0.25);
+      const targetY = scrollTop + (progress * totalHeight);
+      window.scrollTo({ top: targetY, behavior: 'smooth' });
+    }
+
     setTimeout(() => {
       isTransitioning.current = false;
     }, 650);
@@ -1015,19 +1075,19 @@ const BrandExperience = () => {
       description: "Every solution is selected with a focus on accuracy, consistency, and clinical confidence."
     },
     {
-      name: "Trust",
+      name: isMobile ? "Reliability" : "Trust",
       description: "Built on long-term relationships, reliability, and commitment to professional excellence."
     },
     {
-      name: "Excellence",
+      name: isMobile ? "Global Trust" : "Excellence",
       description: "Delivering quality-driven solutions that help practices perform at their best."
     }
   ];
 
   return (
-    <section ref={containerRef} className="relative h-screen w-full overflow-hidden select-none scroll-mt-0">
+    <section ref={containerRef} className="relative h-[400vh] md:h-screen w-full md:overflow-hidden select-none scroll-mt-0">
       {/* Sticky Inner Frame Layout */}
-      <div className={`h-full w-full flex flex-col justify-between pt-24 sm:pt-32 pb-12 px-6 sm:px-12 lg:px-24 transition-colors duration-1000 ease-in-out
+      <div className={`sticky top-0 h-screen md:relative md:h-full w-full flex flex-col justify-between pt-24 sm:pt-32 pb-12 px-6 sm:px-12 lg:px-24 transition-colors duration-1000 ease-in-out
         ${activeIndex === 0 ? 'bg-gradient-to-b from-[#F4F9FA] via-[#F4F9FA] to-[#EAF2F4]' : ''}
         ${activeIndex === 1 ? 'bg-gradient-to-b from-[#EAF2F4] via-[#F4F9FA] to-[#F1F6F7]' : ''}
         ${activeIndex === 2 ? 'bg-gradient-to-b from-[#F1F6F7] via-[#FAFDFD] to-[#E6F3F5]' : ''}
@@ -1037,14 +1097,14 @@ const BrandExperience = () => {
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           {/* Glow 1 - Innovation (Cyan, Top-Right) */}
           <div
-            className={`absolute top-[10%] right-[10%] w-[250px] sm:w-[450px] h-[250px] sm:h-[450px] rounded-full bg-fazo-cyan/25 filter blur-[90px] sm:blur-[130px] transition-opacity duration-1000 ease-in-out
+            className={`absolute top-[10%] right-[10%] w-[250px] sm:w-[450px] h-[250px] sm:h-[450px] rounded-full bg-faazo-cyan/25 filter blur-[90px] sm:blur-[130px] transition-opacity duration-1000 ease-in-out
               ${activeIndex === 0 ? 'opacity-100' : 'opacity-0'}
             `}
           />
 
           {/* Glow 2 - Precision (Teal, Bottom-Left) */}
           <div
-            className={`absolute bottom-[10%] left-[10%] w-[300px] sm:w-[550px] h-[300px] sm:h-[550px] rounded-full bg-fazo-teal/20 filter blur-[100px] sm:blur-[150px] transition-opacity duration-1000 ease-in-out
+            className={`absolute bottom-[10%] left-[10%] w-[300px] sm:w-[550px] h-[300px] sm:h-[550px] rounded-full bg-faazo-teal/20 filter blur-[100px] sm:blur-[150px] transition-opacity duration-1000 ease-in-out
               ${activeIndex === 1 ? 'opacity-100' : 'opacity-0'}
             `}
           />
@@ -1058,7 +1118,7 @@ const BrandExperience = () => {
 
           {/* Glow 4 - Excellence (Teal/Navy, Bottom-Right) */}
           <div
-            className={`absolute bottom-[15%] right-[15%] w-[320px] sm:w-[600px] h-[320px] sm:h-[600px] rounded-full bg-fazo-teal/15 filter blur-[110px] sm:blur-[160px] transition-opacity duration-1000 ease-in-out
+            className={`absolute bottom-[15%] right-[15%] w-[320px] sm:w-[600px] h-[320px] sm:h-[600px] rounded-full bg-faazo-teal/15 filter blur-[110px] sm:blur-[160px] transition-opacity duration-1000 ease-in-out
               ${activeIndex === 3 ? 'opacity-100' : 'opacity-0'}
             `}
           />
@@ -1070,7 +1130,7 @@ const BrandExperience = () => {
               fill="none"
               stroke="currentColor"
               strokeWidth="1.5"
-              className="text-fazo-teal transition-all duration-1000 ease-in-out"
+              className="text-faazo-teal transition-all duration-1000 ease-in-out"
               style={{
                 strokeDasharray: '1000',
                 strokeDashoffset: activeIndex * 250
@@ -1081,7 +1141,7 @@ const BrandExperience = () => {
               fill="none"
               stroke="currentColor"
               strokeWidth="1"
-              className="text-fazo-cyan transition-all duration-1000 ease-in-out"
+              className="text-faazo-cyan transition-all duration-1000 ease-in-out"
               style={{
                 strokeDasharray: '1000',
                 strokeDashoffset: (3 - activeIndex) * 200
@@ -1091,12 +1151,12 @@ const BrandExperience = () => {
         </div>
 
         {/* Section Header */}
-        <div className="relative z-10 w-full flex flex-col md:flex-row md:items-end justify-between border-b border-fazo-border/60 pb-6">
+        <div className="relative z-10 w-full flex flex-col md:flex-row md:items-end justify-between border-b border-faazo-border/60 pb-6">
           <div>
-            <span className="font-sans font-bold text-[12px] sm:text-[13px] tracking-[0.25em] text-fazo-teal uppercase mb-2 block">
-              WHY FAZO
+            <span className="font-sans font-bold text-[12px] sm:text-[13px] tracking-[0.25em] text-faazo-teal uppercase mb-2 block">
+              WHY FAAZO
             </span>
-            <h2 className="font-jakarta font-extrabold text-2xl sm:text-4xl text-fazo-navy tracking-tight">
+            <h2 className="font-jakarta font-extrabold text-2xl sm:text-4xl text-faazo-navy tracking-tight">
               Advancing the Future of Dentistry
             </h2>
           </div>
@@ -1111,14 +1171,14 @@ const BrandExperience = () => {
               >
                 <span
                   className={`font-jakarta font-bold text-[11px] sm:text-[13px] transition-all duration-500 mr-1.5 sm:mr-2
-                    ${idx === activeIndex ? 'text-fazo-teal scale-105' : 'text-fazo-gray/50 group-hover:text-fazo-navy'}
+                    ${idx === activeIndex ? 'text-faazo-teal scale-105' : 'text-faazo-gray/50 group-hover:text-faazo-navy'}
                   `}
                 >
                   0{idx + 1}
                 </span>
-                <div className="h-[3px] sm:h-1 w-6 sm:w-8 bg-fazo-border/80 rounded-full overflow-hidden relative">
+                <div className="h-[3px] sm:h-1 w-6 sm:w-8 bg-faazo-border/80 rounded-full overflow-hidden relative">
                   <div
-                    className="absolute inset-y-0 left-0 bg-fazo-teal transition-all duration-500"
+                    className="absolute inset-y-0 left-0 bg-faazo-teal transition-all duration-500"
                     style={{
                       width: idx === activeIndex ? '100%' : (idx < activeIndex ? '100%' : '0%')
                     }}
@@ -1154,7 +1214,7 @@ const BrandExperience = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="mt-6 sm:mt-8 font-sans text-base sm:text-lg md:text-[21px] text-fazo-gray max-w-[680px] leading-relaxed font-medium transition-all duration-700 delay-75">
+                <p className="mt-6 sm:mt-8 font-sans text-base sm:text-lg md:text-[21px] text-faazo-gray max-w-[680px] leading-relaxed font-medium transition-all duration-700 delay-75">
                   {pillar.description}
                 </p>
               </div>
@@ -1163,9 +1223,9 @@ const BrandExperience = () => {
         </div>
 
         {/* Section Footer */}
-        <div className="relative z-10 w-full flex justify-between items-center text-[9px] sm:text-[11px] font-sans font-bold tracking-wider text-fazo-gray/50 border-t border-fazo-border/30 pt-6">
+        <div className="relative z-10 w-full flex justify-between items-center text-[9px] sm:text-[11px] font-sans font-bold tracking-wider text-faazo-gray/50 border-t border-faazo-border/30 pt-6">
           <span>LUXURY DENTAL ECOSYSTEM</span>
-          <span className="flex items-center gap-1.5 text-fazo-teal">
+          <span className="flex items-center gap-1.5 text-faazo-teal">
             SCROLL TO EXPLORE <span className="text-[12px] animate-bounce">↓</span>
           </span>
           <span>EST. 2026</span>
@@ -1194,14 +1254,14 @@ const DentalChairIcon = ({ className = "w-5 h-5" }) => (
   </svg>
 );
 
-const fazoMarkers = [
+const faazoMarkers = [
   { id: "india-hq", location: [8.5241, 76.9366], label: "India HQ (Kerala)" },
   { id: "dubai", location: [25.2048, 55.2708], label: "Middle East" },
   { id: "nairobi", location: [-1.2921, 36.8219], label: "Africa" },
   { id: "london", location: [51.5074, -0.1278], label: "Europe" }
 ];
 
-const fazoArcs = [
+const faazoArcs = [
   {
     id: "india-dubai",
     from: [8.5241, 76.9366],
@@ -1239,10 +1299,10 @@ const marqueeItems = [
 
 const GlobalPresence = () => {
   return (
-    <section className="py-24 sm:py-32 bg-[#F8FAFC] relative overflow-hidden border-t border-fazo-border/50">
+    <section className="py-24 sm:py-32 bg-[#F8FAFC] relative overflow-hidden border-t border-faazo-border/50">
       {/* Background glow effects */}
       <div className="absolute top-[20%] right-[-10%] w-[500px] h-[500px] rounded-full bg-[#0A7C86]/5 blur-[120px] pointer-events-none z-0"></div>
-      <div className="absolute bottom-[10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-fazo-teal/5 blur-[100px] pointer-events-none z-0"></div>
+      <div className="absolute bottom-[10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-faazo-teal/5 blur-[100px] pointer-events-none z-0"></div>
 
       <div className="max-w-[1300px] mx-auto px-6 lg:px-8 relative z-10">
 
@@ -1259,13 +1319,13 @@ const GlobalPresence = () => {
                 GLOBAL PRESENCE
               </span>
 
-              <h2 className="font-jakarta font-extrabold text-3xl sm:text-[40px] leading-[1.15] text-fazo-navy mb-4 tracking-tight">
+              <h2 className="font-jakarta font-extrabold text-3xl sm:text-[40px] leading-[1.15] text-faazo-navy mb-4 tracking-tight">
                 Trusted Across Borders. <br className="hidden sm:inline" />
                 Built for <span className="text-[#0A7C86]">Growth</span>.
               </h2>
 
-              <p className="font-sans text-[15px] sm:text-[16px] leading-[1.7] text-fazo-gray text-justify">
-                Starting from Kerala in 2014, FAZO has evolved into a trusted dental technology company serving dental clinics, hospitals, and educational institutions across India. Through years of industry expertise, reliable solutions, and customer-focused service, the company has built strong relationships with more than 1,500 healthcare and academic organizations. Today, FAZO continues its growth beyond national borders, expanding its presence through exports to Africa, the Middle East, and emerging global markets while showcasing Indian-made dental technology on the international stage.
+              <p className="font-sans text-[15px] sm:text-[16px] leading-[1.7] text-faazo-gray text-justify">
+                Starting from Kerala in 2014, FAAZO has evolved into a trusted dental technology company serving dental clinics, hospitals, and educational institutions across India. Through years of industry expertise, reliable solutions, and customer-focused service, the company has built strong relationships with more than 1,500 healthcare and academic organizations. Today, FAAZO continues its growth beyond national borders, expanding its presence through exports to Africa, the Middle East, and emerging global markets while showcasing Indian-made dental technology on the international stage.
               </p>
             </div>
           </div>
@@ -1276,9 +1336,9 @@ const GlobalPresence = () => {
           {/* RIGHT SIDE GLOBE (40% width, secondary supporting visual, overflow right) */}
           <div className="relative lg:absolute lg:right-[-4%] lg:top-[50%] lg:-translate-y-1/2 w-full lg:w-[44%] max-w-[480px] aspect-square flex items-center justify-center overflow-visible z-0 pointer-events-auto">
             <CobeGlobe
-              markers={fazoMarkers}
-              arcs={fazoArcs}
-              markerColor={[0.039, 0.486, 0.525]} // FAZO green [#0A7C86]
+              markers={faazoMarkers}
+              arcs={faazoArcs}
+              markerColor={[0.039, 0.486, 0.525]} // FAAZO green [#0A7C86]
               baseColor={[0.9, 0.94, 0.95]}
               arcColor={[0.039, 0.486, 0.525]}
               glowColor={[0.95, 0.98, 0.98]}
@@ -1293,10 +1353,10 @@ const GlobalPresence = () => {
         </div>
 
         {/* Logo Cloud Section */}
-        <div className="mt-20 pt-10 border-t border-fazo-border/40 relative z-10">
+        <div className="mt-20 pt-10 border-t border-faazo-border/40 relative z-10">
           <div className="text-center mb-6">
-            <h3 className="font-jakarta font-semibold text-fazo-navy text-base sm:text-lg tracking-tight">
-              <span className="text-fazo-gray font-medium">Trusted by experts. </span>
+            <h3 className="font-jakarta font-semibold text-faazo-navy text-base sm:text-lg tracking-tight">
+              <span className="text-faazo-gray font-medium">Trusted by experts. </span>
               <span className="font-semibold">Used by the leaders.</span>
             </h3>
           </div>
@@ -1309,12 +1369,6 @@ const GlobalPresence = () => {
 };
 
 const Footer = () => {
-  const [categories, setCategories] = useState([]);
-
-  useEffect(() => {
-    getCategories().then(data => setCategories(Array.isArray(data) ? data : []));
-  }, []);
-
   return (
     <motion.footer
       initial={{ opacity: 0, y: 30 }}
@@ -1343,8 +1397,8 @@ const Footer = () => {
           <div className="lg:col-span-4 flex flex-col items-start gap-6">
             <div className="relative">
               {/* Soft logo glow cap */}
-              <div className="absolute -inset-2 bg-gradient-to-r from-fazo-teal/20 to-fazo-cyan/20 blur-md opacity-70 rounded-full" />
-              <img src="/hero/fazologo.png" alt="FAZO" className="relative h-8 w-auto object-contain brightness-0 invert" />
+              <div className="absolute -inset-2 bg-gradient-to-r from-faazo-teal/20 to-faazo-cyan/20 blur-md opacity-70 rounded-full" />
+              <img src="/hero/faazologo.png" alt="FAAZO" className="relative h-8 w-auto object-contain brightness-0 invert" />
             </div>
 
             <p className="font-sans text-[14px] text-[#8E9CAE] leading-relaxed max-w-[320px]">
@@ -1354,10 +1408,7 @@ const Footer = () => {
             {/* Social Icons with premium Glassmorphism styling */}
             <div className="flex items-center gap-3.5 mt-2">
               {[
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
-                { icon: Instagram, href: "#", label: "Instagram" },
-                { icon: Facebook, href: "#", label: "Facebook" },
-                { icon: Youtube, href: "#", label: "YouTube" }
+                { icon: Instagram, href: "#", label: "Instagram" }
               ].map((social, idx) => {
                 const IconComponent = social.icon;
                 return (
@@ -1365,7 +1416,7 @@ const Footer = () => {
                     key={idx}
                     href={social.href}
                     aria-label={social.label}
-                    className="w-10 h-10 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-fazo-teal/40 hover:text-[#0A7C86] flex items-center justify-center text-white/70 transition-all duration-300 backdrop-blur-md shadow-sm"
+                    className="w-10 h-10 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-faazo-teal/40 hover:text-[#0A7C86] flex items-center justify-center text-white/70 transition-all duration-300 backdrop-blur-md shadow-sm"
                   >
                     <IconComponent className="w-[18px] h-[18px]" />
                   </a>
@@ -1374,8 +1425,8 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2: Quick Links (2/12 width) */}
-          <div className="lg:col-span-2 flex flex-col items-start gap-5">
+          {/* Column 2: Quick Links (3/12 width) */}
+          <div className="lg:col-span-3 flex flex-col items-start gap-5">
             <h4 className="font-jakarta font-bold text-[14px] tracking-[0.1em] text-white uppercase">
               Quick Links
             </h4>
@@ -1420,47 +1471,25 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Products (3/12 width) */}
-          <div className="lg:col-span-3 flex flex-col items-start gap-5">
-            <h4 className="font-jakarta font-bold text-[14px] tracking-[0.1em] text-white uppercase">
-              Products
-            </h4>
-            <ul className="flex flex-col gap-3.5 w-full">
-              {categories.slice(0, 6).map((cat) => (
-                <li key={cat.id}>
-                  <Link
-                    to={`/products/${cat.slug}`}
-                    className="font-sans text-[14px] text-[#8E9CAE] hover:text-[#0A7C86] transition-colors duration-300 relative py-0.5 group inline-block text-left"
-                  >
-                    {cat.name}
-                    <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#0A7C86] transition-all duration-300 group-hover:w-full" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 4: Contact Information (3/12 width) */}
-          <div className="lg:col-span-3 flex flex-col items-start gap-5">
+          {/* Column 3: Contact Information (5/12 width) */}
+          <div className="lg:col-span-5 flex flex-col items-start gap-5">
             <h4 className="font-jakarta font-bold text-[14px] tracking-[0.1em] text-white uppercase">
               Contact Information
             </h4>
-            <ul className="flex flex-col gap-4.5 w-full font-sans text-[14px] text-[#8E9CAE]">
+            <ul className="flex flex-col gap-5 w-full font-sans text-[14px] text-[#8E9CAE]">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#0A7C86] shrink-0 mt-0.5" />
                 <span className="leading-relaxed">Thiruvananthapuram, Kerala, India</span>
               </li>
+
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-[#0A7C86] shrink-0 mt-0.5" />
                 <a href="tel:+918848922846" className="leading-relaxed hover:text-white transition-colors cursor-pointer">+91 88489 22846</a>
               </li>
+
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-[#0A7C86] shrink-0 mt-0.5" />
-                <a href="mailto:info@fazo.in" className="leading-relaxed hover:text-white transition-colors cursor-pointer">info@fazo.in</a>
-              </li>
-              <li className="flex items-start gap-3">
-                <Globe className="w-5 h-5 text-[#0A7C86] shrink-0 mt-0.5" />
-                <a href="mailto:exports@faazodent.com" className="leading-relaxed hover:text-white transition-colors cursor-pointer">exports@faazodent.com</a>
+                <a href="mailto:info@faazo.in" className="leading-relaxed hover:text-white transition-colors cursor-pointer">info@faazo.in</a>
               </li>
             </ul>
           </div>
@@ -1470,21 +1499,33 @@ const Footer = () => {
         {/* Bottom Divider & Copyright */}
         <div className="pt-8 mt-4 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-sans text-[13px] text-[#5A6E7F] text-center sm:text-left">
-            © 2026 Fazodent Dental Solutions Pvt Ltd. All Rights Reserved.
+            © 2026 Faazodent Dental Solutions Pvt Ltd. All Rights Reserved.
+            <span className="mx-2 hidden sm:inline">|</span>
+            <span className="block sm:inline mt-1 sm:mt-0">
+              Designed & Engineered by{' '}
+              <a
+                href="https://manziostudio.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#8E9CAE] hover:text-[#0A7C86] transition-colors font-medium"
+              >
+                Manzio Studio
+              </a>
+            </span>
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="font-sans text-[13px] text-[#5A6E7F] hover:text-[#0A7C86] transition-colors py-0.5 relative group">
+            <Link to="/privacy" className="font-sans text-[13px] text-[#5A6E7F] hover:text-[#0A7C86] transition-colors py-0.5 relative group">
               Privacy Policy
               <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#0A7C86] transition-all duration-300 group-hover:w-full" />
-            </a>
-            <a href="#" className="font-sans text-[13px] text-[#5A6E7F] hover:text-[#0A7C86] transition-colors py-0.5 relative group">
+            </Link>
+            <Link to="/terms" className="font-sans text-[13px] text-[#5A6E7F] hover:text-[#0A7C86] transition-colors py-0.5 relative group">
               Terms & Conditions
               <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#0A7C86] transition-all duration-300 group-hover:w-full" />
-            </a>
-            <Link to="/admin" className="font-sans text-[13px] text-[#5A6E7F] hover:text-[#0A7C86] transition-colors py-0.5 relative group">
+            </Link>
+            <a href="/admin" className="font-sans text-[13px] text-[#5A6E7F] hover:text-[#0A7C86] transition-colors py-0.5 relative group">
               Admin Portal
               <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-[#0A7C86] transition-all duration-300 group-hover:w-full" />
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -1524,17 +1565,21 @@ const TitleUpdater = () => {
     // Admin routes manage their own titles via AdminLayout
     if (path.startsWith('/admin')) return;
     if (path === '/') {
-      document.title = "FAZO - Advanced Dental Technology";
+      document.title = "FAAZO - Advanced Dental Technology";
     } else if (path === '/about') {
-      document.title = "About Us | FAZO Dental Technology";
+      document.title = "About Us | FAAZO Dental Technology";
     } else if (path === '/products') {
-      document.title = "Products | FAZO Dental Technology";
+      document.title = "Products | FAAZO Dental Technology";
     } else if (path === '/dealer-network') {
-      document.title = "Dealer Network | FAZO Dental Technology";
+      document.title = "Dealer Network | FAAZO Dental Technology";
     } else if (path === '/careers') {
-      document.title = "Careers | FAZO Dental Technology";
+      document.title = "Careers | FAAZO Dental Technology";
     } else if (path === '/contact') {
-      document.title = "Contact Us | FAZO Dental Technology";
+      document.title = "Contact Us | FAAZO Dental Technology";
+    } else if (path === '/privacy') {
+      document.title = "Privacy Policy | FAAZO Dental Technology";
+    } else if (path === '/terms') {
+      document.title = "Terms & Conditions | FAAZO Dental Technology";
     }
   }, [location.pathname]);
 
@@ -1543,9 +1588,9 @@ const TitleUpdater = () => {
 
 const PublicLayout = () => {
   return (
-    <div className="min-h-screen flex flex-col relative bg-gradient-to-tr from-[#E6F3F5] via-[#F4F9FA] to-[#EAF2F4] font-sans text-fazo-navy antialiased">
-      <div className="absolute top-[10%] right-[-5%] w-[350px] sm:w-[450px] h-[350px] sm:h-[450px] rounded-full bg-fazo-cyan/20 blur-[100px] sm:blur-[130px] animate-float-slow pointer-events-none z-0"></div>
-      <div className="absolute top-[40%] left-[-5%] w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-fazo-teal/15 blur-[110px] sm:blur-[140px] animate-float-medium pointer-events-none z-0"></div>
+    <div className="min-h-screen flex flex-col relative bg-gradient-to-tr from-[#E6F3F5] via-[#F4F9FA] to-[#EAF2F4] font-sans text-faazo-navy antialiased">
+      <div className="absolute top-[10%] right-[-5%] w-[350px] sm:w-[450px] h-[350px] sm:h-[450px] rounded-full bg-faazo-cyan/20 blur-[100px] sm:blur-[130px] animate-float-slow pointer-events-none z-0"></div>
+      <div className="absolute top-[40%] left-[-5%] w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] rounded-full bg-faazo-teal/15 blur-[110px] sm:blur-[140px] animate-float-medium pointer-events-none z-0"></div>
       <div className="absolute bottom-[10%] left-[35%] w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] rounded-full bg-[#82E0E8]/15 blur-[80px] sm:blur-[110px] pointer-events-none z-0 animate-float-fast"></div>
 
       <div className="relative z-10 flex flex-col min-h-screen">
@@ -1560,6 +1605,8 @@ const PublicLayout = () => {
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms" element={<TermsConditionsPage />} />
         </Routes>
 
         <Footer />
@@ -1622,8 +1669,27 @@ const AppRoutes = () => {
 };
 
 const App = () => {
+  const path = window.location.pathname;
+
+  // 1. Root URL displays Coming Soon Page
+  if (path === '/') {
+    return <ComingSoonPage />;
+  }
+
+  // 2. Admin URL routes normally
+  const isAdmin = path.startsWith('/admin');
+  if (isAdmin) {
+    return (
+      <Router>
+        <ScrollToTop />
+        <AppRoutes />
+      </Router>
+    );
+  }
+
+  // 3. Main FAAZO website runs under /home basename
   return (
-    <Router>
+    <Router basename="/home">
       <ScrollToTop />
       <TitleUpdater />
       <AppRoutes />

@@ -40,11 +40,11 @@ const CtaCard = React.forwardRef<HTMLDivElement, CtaCardProps>(
         {/* Content Section */}
         <div className="md:w-[62%] w-full p-8 sm:p-10 md:p-12 flex flex-col justify-center">
           <div>
-            <p className="text-[12px] sm:text-[13px] font-extrabold tracking-[0.18em] text-fazo-teal uppercase font-sans">{title}</p>
-            <h2 className="mt-2 text-2xl sm:text-3xl md:text-[32px] font-extrabold tracking-tight font-jakarta text-fazo-navy leading-[1.2]">
+            <p className="text-[12px] sm:text-[13px] font-extrabold tracking-[0.18em] text-faazo-teal uppercase font-sans">{title}</p>
+            <h2 className="mt-2 text-2xl sm:text-3xl md:text-[32px] font-extrabold tracking-tight font-jakarta text-faazo-navy leading-[1.2]">
               {subtitle}
             </h2>
-            <p className="mt-4 text-fazo-gray text-sm sm:text-[15px] leading-relaxed font-sans max-w-[560px]">
+            <p className="mt-4 text-faazo-gray text-sm sm:text-[15px] leading-relaxed font-sans max-w-[560px]">
               {description}
             </p>
             <div className="mt-8">

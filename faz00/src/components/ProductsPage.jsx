@@ -33,7 +33,7 @@ export const ProductsPage = () => {
       <div className="relative h-[83vh] w-full bg-white flex flex-col justify-start">
 
         {/* Background Image Container (75vh height - occupies approx 75% of hero section height) */}
-        <div className="relative h-[75vh] w-full overflow-hidden flex flex-col justify-start border-b border-fazo-border/30 bg-white">
+        <div className="relative h-[75vh] w-full overflow-hidden flex flex-col justify-start border-b border-faazo-border/30 bg-white">
 
           {/* Static Background Image */}
           <div
@@ -47,7 +47,7 @@ export const ProductsPage = () => {
           {/* White-to-transparent subtle gradient overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent z-10" />
 
-          {/* Soft Green Glow Accent (Subtle, FAZO green #0A7C86) */}
+          {/* Soft Green Glow Accent (Subtle, FAAZO green #0A7C86) */}
           <div className="absolute top-[20%] left-[10%] w-[350px] h-[350px] rounded-full bg-[#0A7C86]/5 blur-[120px] pointer-events-none z-10 animate-pulse" />
 
           {/* Content Container (Left Aligned, Vertically Centered with my-auto to avoid top clipping) */}
@@ -59,7 +59,7 @@ export const ProductsPage = () => {
               className="max-w-[700px] my-auto"
             >
               {/* Main Heading */}
-              <h1 className="font-jakarta font-extrabold text-[32px] sm:text-[42px] md:text-[52px] lg:text-[62px] leading-[1.1] text-fazo-navy tracking-tight mb-5">
+              <h1 className="font-jakarta font-extrabold text-[32px] sm:text-[42px] md:text-[52px] lg:text-[62px] leading-[1.1] text-faazo-navy tracking-tight mb-5">
                 Explore Our <br />
                 <span className="text-[#0A7C86]">
                   Clinical Ecosystem
@@ -67,7 +67,7 @@ export const ProductsPage = () => {
               </h1>
 
               {/* Description */}
-              <p className="font-sans text-xs sm:text-sm md:text-[15px] text-fazo-gray max-w-[580px] leading-relaxed mb-0">
+              <p className="font-sans text-xs sm:text-sm md:text-[15px] text-faazo-gray max-w-[580px] leading-relaxed mb-0">
                 Equipping dental clinics and laboratories with precision instruments, ergonomic treatment chairs, high-definition visualization tools, and intelligent software to ensure excellent patient outcomes.
               </p>
             </motion.div>
@@ -75,7 +75,7 @@ export const ProductsPage = () => {
         </div>
 
         {/* Visible whitespace below the image before the next section begins (8vh height) */}
-        <div className="h-[8vh] w-full bg-white border-b border-fazo-border/10"></div>
+        <div className="h-[8vh] w-full bg-white border-b border-faazo-border/10"></div>
       </div>
 
       {/* Category Showcase Section */}
@@ -86,8 +86,8 @@ export const ProductsPage = () => {
           <h2 className="font-jakarta font-bold text-[13px] tracking-[0.2em] text-[#0A7C86] uppercase mb-3">
             Featured Categories
           </h2>
-          <p className="font-sans text-[15px] sm:text-base text-fazo-gray max-w-[800px] mx-auto leading-relaxed">
-            Select a category to discover FAZO's advanced portfolio of dental technologies, precision instruments, and clinical solutions designed to help dental professionals achieve superior efficiency, accuracy, and patient care while meeting the highest international quality standards.
+          <p className="font-sans text-[15px] sm:text-base text-faazo-gray max-w-[800px] mx-auto leading-relaxed">
+            Select a category to discover FAAZO's advanced portfolio of dental technologies, precision instruments, and clinical solutions designed to help dental professionals achieve superior efficiency, accuracy, and patient care while meeting the highest international quality standards.
           </p>
         </div>
 
@@ -120,10 +120,10 @@ export const ProductsPage = () => {
                   {/* Card Info */}
                   <div className="pt-4 px-5 pb-5 flex flex-col flex-grow justify-between bg-gradient-to-b from-[#E6F3F5]/70 via-white/80 to-[#EAF2F4]/70 border-t border-white/30 text-left">
                     <div>
-                      <h3 className="font-jakarta font-bold text-base sm:text-lg text-fazo-navy mb-1.5 leading-snug group-hover:text-[#0A7C86] transition-colors duration-300">
+                      <h3 className="font-jakarta font-bold text-base sm:text-lg text-faazo-navy mb-1.5 leading-snug group-hover:text-[#0A7C86] transition-colors duration-300">
                         {cat.name}
                       </h3>
-                      <p className="font-sans text-xs sm:text-sm text-fazo-gray leading-relaxed mb-3 line-clamp-2">
+                      <p className="font-sans text-xs sm:text-sm text-faazo-gray leading-relaxed mb-3 line-clamp-2">
                         {cat.description}
                       </p>
                     </div>
